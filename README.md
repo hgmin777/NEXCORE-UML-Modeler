@@ -1,5 +1,4 @@
-# NEXCORE-UML-Modeler-OSS-
-NEXCORE UML Modeler, OSS version
+# NEXCORE-UML-Modeler (OSS version)
 
 * Usecase Diagram
 * Class Diagram
