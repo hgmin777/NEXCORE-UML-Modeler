@@ -18,5 +18,5 @@
 * Usecase Diagram
 * Class Diagram
 * Sequence Diagram
-* Component Diagram
 * Activity Diagram
+* Component Diagram
