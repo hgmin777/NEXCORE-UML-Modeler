@@ -13,7 +13,7 @@
 * [OMG](http://www.omg.org/) 표준의 객체지향 모델링을 위한 언어
 * The [Unified Modeling Language™](http://www.uml.org/) is OMG's most-used specification, and the way the world models not only application structure, behavior, and architecture, but also business process and data structure.  
 
-### 3. NEXCORE UML Modeler에서 제공하는 다이어그램 
+### 3. 지원하는 다이어그램 
 
 * Usecase Diagram
 * Class Diagram
@@ -21,7 +21,7 @@
 * Activity Diagram
 * Component Diagram
 
-### 4. NEXCORE UML Modeler 사례
+### 4. 활용 사례
 
 * Class Diagram 사례
 > ![](http://nexcore.skcc.com/alm/alcinous/manual/topic/nexcore.tool.uml.help/html/images/properties_1.png)
