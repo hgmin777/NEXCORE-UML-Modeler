@@ -4,7 +4,7 @@
 
 ### 1. NEXCORE UML Modeler는? 
 
-* [SK Holdings C&C(구 SK C&C)](http://cc.sk.com/)에서 개밸한 UML 모델링 툴이며, UML 2.1을 지원
+* [SK Holdings C&C](http://cc.sk.com/)(구 SK C&C)에서 개발한 UML 모델링 툴이며, UML 2.1을 지원
 * 어플리케이션의 구조, 행위, 아키텍처 및 비즈니스 프로세스 모델링 기능  제공
 * 일부 상용 라이브러리를 사용하는 기능을 제외하고, Apache License 2.0으로 Open Source화한 버전을 제공
 
