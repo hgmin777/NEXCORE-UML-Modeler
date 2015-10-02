@@ -17,6 +17,8 @@
 
 * Usecase Diagram
 * Class Diagram
+> ![](http://nexcore.skcc.com/alm/alcinous/manual/topic/nexcore.tool.uml.help/html/images/properties_1.png)
+
 * Sequence Diagram
 * Activity Diagram
 * Component Diagram
