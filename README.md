@@ -6,7 +6,7 @@
 
 * [SK Holdings C&C(구 SK C&C)](http://cc.sk.com/)에서 개밸한 UML 모델링 툴이며, UML 2.1을 지원
 * 비즈니스 로직을 구현하기 위해 모델 기반의 아키텍처와 자동화된 기능을 제공
-* Apache Lic. 2.0으로 일부 상용 라이선스 기능을 제외하고 Open Source화한 버전을 제공
+* 일부 상용 라이브러리를 사용하는 기능을 제외하고, Apache License 2.0으로 Open Source화한 버전을 제공
 
 ### 2. UML이란?
 
