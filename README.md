@@ -24,7 +24,7 @@
 ### 4. 활용 사례
 
 * Class Diagram 사례
-> ![](http://nexcore.skcc.com/alm/alcinous/manual/topic/nexcore.tool.uml.help/html/images/properties_1.png)
+> ![](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/filesForGitHub/class_diagram1.jpg)
 
 * Sequence Diagram 사례
 > ![](http://nexcore.skcc.com/alm/alcinous/manual/topic/nexcore.tool.uml.help/html/images/img22.jpg)
