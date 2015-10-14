@@ -1,6 +1,6 @@
 #### (WIP, 현재 Open Source화를 위해 작업중입니다.)
 ---
-### NEXCORE UML Modeler 2.0(OSS version)
+### NEXCORE UML Modeler v2.0 (OSS version)
 
 #### 1. NEXCORE UML Modeler는? 
 
