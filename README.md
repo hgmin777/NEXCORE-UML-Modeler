@@ -15,7 +15,7 @@
 
 #### 3. 지원하는 다이어그램 
 
-* ![Usecase Diagram] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/3.1.-%EC%9C%A0%EC%8A%A4%EC%BC%80%EC%9D%B4%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8)
+* [Usecase Diagram] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/3.1.-%EC%9C%A0%EC%8A%A4%EC%BC%80%EC%9D%B4%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8)
 * Class Diagram
 * Sequence Diagram
 * Activity Diagram
