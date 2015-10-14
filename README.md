@@ -28,3 +28,8 @@
 
 * Sequence Diagram 사례
 > ![](http://nexcore.skcc.com/alm/alcinous/manual/topic/nexcore.tool.uml.help/html/images/img22.jpg)
+
+#### 5. 가이드
+
+* [Quick Guide] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/0.-Quick-Guide) 
+* [사용자 매뉴얼] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki)
