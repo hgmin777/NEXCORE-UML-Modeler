@@ -21,15 +21,9 @@
 * [Activity Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/3.4.-%EC%95%A1%ED%8B%B0%EB%B9%84%ED%8B%B0-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8)
 * [Component Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/3.5.-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8)
 
-#### 4. 활용 사례
-
-* Class Diagram 사례
 > ![](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/filesForGitHub/class_diagram1.jpg)
 
-* Sequence Diagram 사례
-> ![](http://nexcore.skcc.com/alm/alcinous/manual/topic/nexcore.tool.uml.help/html/images/img22.jpg)
-
-#### 5. 가이드
+#### 4. 가이드
 
 * [Quick Guide] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/0.-Quick-Guide) 
 * [사용자 매뉴얼] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki)
