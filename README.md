@@ -7,6 +7,7 @@
 * [SK Holdings C&C](http://cc.sk.com/)(구 SK C&C)에서 개발한 UML 모델링 툴이며, UML 2.1을 지원
 * 어플리케이션의 구조, 행위, 아키텍처 및 비즈니스 프로세스 모델링 기능  제공
 * 상용 라이브러리를 사용하는 용어관리, 산출물생성 기능을 제거하고, Apache License 2.0으로 Open Source화한 버전을 제공
+ > [![NEXCORE](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/filesForGitHub/top_nexcore.gif)](http://nexcore.skcc.com/ko/)  is a trademark of SK Holdings Co. Ltd.
 
 #### 2. Unified Modeling Language(UML)이란?
 
