@@ -29,4 +29,4 @@
 * [User Manual] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki)
 
 
-#### [![NEXCORE](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/filesForGitHub/top_nexcore.gif)](http://nexcore.skcc.com/ko/)  is a trademark of SK Holdings Co. Ltd.
+[![NEXCORE](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/filesForGitHub/top_nexcore.gif)](http://nexcore.skcc.com/ko/)  is a trademark of SK Holdings Co. Ltd.
