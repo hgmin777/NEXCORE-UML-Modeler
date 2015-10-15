@@ -15,7 +15,7 @@
 * [OMG](http://www.omg.org/) 표준의 객체지향 모델링을 위한 언어
 * The [Unified Modeling Language™](http://www.uml.org/) is OMG's most-used specification, and the way the world models not only application structure, behavior, and architecture, but also business process and data structure.  
 
-#### 3. 지원하는 다이어그램 
+#### 3. Supported Diagrams 
 
 * [Usecase Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/3.1.-%EC%9C%A0%EC%8A%A4%EC%BC%80%EC%9D%B4%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8)
 * [Class Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/3.2.-%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8)
@@ -25,7 +25,7 @@
 
 > ![](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/filesForGitHub/class_diagram1.jpg)
 
-#### 4. 가이드
+#### 4. Guidance
 
 * [Quick Guide] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/0.-Quick-Guide) 
-* [사용자 매뉴얼] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki)
+* [User Manual] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki)
