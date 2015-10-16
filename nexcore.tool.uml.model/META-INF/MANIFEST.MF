@@ -1,0 +1,47 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NEXCORE UML Model Plug-in
+Bundle-SymbolicName: nexcore.tool.uml.model;singleton:=true
+Bundle-Version: 2.1.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: SK Holdings
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
+ J2SE-1.5
+Export-Package: 
+ nexcore.tool.uml.model,
+ nexcore.tool.uml.model.modeldetail,
+ nexcore.tool.uml.model.modeldetail.impl,
+ nexcore.tool.uml.model.modeldetail.util,
+ nexcore.tool.uml.model.projectinformation,
+ nexcore.tool.uml.model.projectinformation.impl,
+ nexcore.tool.uml.model.projectinformation.util,
+ nexcore.tool.uml.model.relation,
+ nexcore.tool.uml.model.relation.impl,
+ nexcore.tool.uml.model.relation.util,
+ nexcore.tool.uml.model.rmdata,
+ nexcore.tool.uml.model.rmdata.impl,
+ nexcore.tool.uml.model.rmdata.util,
+ nexcore.tool.uml.model.umldiagram,
+ nexcore.tool.uml.model.umldiagram.impl,
+ nexcore.tool.uml.model.umldiagram.util,
+ nexcore.tool.uml.model.umlfragment,
+ nexcore.tool.uml.model.umlfragment.impl,
+ nexcore.tool.uml.model.umlfragment.provider,
+ nexcore.tool.uml.model.umlfragment.util,
+ nexcore.tool.uml.model.umlglossary,
+ nexcore.tool.uml.model.umlglossary.impl,
+ nexcore.tool.uml.model.umlglossary.provider,
+ nexcore.tool.uml.model.umlglossary.util,
+ nexcore.tool.uml.model.usecasedetail,
+ nexcore.tool.uml.model.usecasedetail.impl,
+ nexcore.tool.uml.model.usecasedetail.util,
+ nexcore.tool.uml.model.usecasedisplayId,
+ nexcore.tool.uml.model.usecasedisplayId.impl,
+ nexcore.tool.uml.model.usecasedisplayId.util
+Require-Bundle: org.eclipse.uml2.uml.edit;bundle-version="2.2.0";visibility:=reexport,
+ org.eclipse.emf.edit.ui;bundle-version="2.4.2";visibility:=reexport,
+ org.eclipse.core.runtime;bundle-version="3.4.0",
+ org.eclipse.emf.query;bundle-version="0.0.0",
+ com.ibm.icu;bundle-version="4.2.1"
+Bundle-ActivationPolicy: lazy

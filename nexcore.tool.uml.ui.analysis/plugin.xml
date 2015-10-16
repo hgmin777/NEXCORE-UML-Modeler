@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="nexcore.tool.uml.ui.analysis.componentdiagram.editor.ComponentDiagramEditor"
+            contributorClass="nexcore.tool.uml.ui.analysis.componentdiagram.action.ComponentDiagramActionContributor"
+            default="false"
+            icon="icons/ComponentDiagram.gif"
+            id="nexcore.tool.uml.ui.analysis.componentdiagrameditor"
+            name="Component Diagram Editor">
+      </editor>
+      <editor
+            class="nexcore.tool.uml.ui.analysis.activitydiagram.editor.ActivityDiagramEditor"
+            contributorClass="nexcore.tool.uml.ui.analysis.activitydiagram.action.ActivityDiagramActionContributor"
+            default="false"
+            icon="icons/ActivityDiagram.gif"
+            id="nexcore.tool.uml.ui.analysis.activitydiagrameditor"
+            name="Activity Diagram Editor">
+      </editor>
+   </extension>
+
+   <extension
+         point="nexcore.tool.uml.ui.core.editor.extension">
+      <editor
+            editPartFactory="nexcore.tool.uml.ui.analysis.componentdiagram.edit.part.ComponentDiagramEditPartFactory"
+            id="nexcore.tool.uml.ui.analysis.componentdiagrameditor"
+            name="nexcore.tool.uml.ui.analysis.componentdiagrameditor">
+      </editor>
+      <editor
+            editPartFactory="nexcore.tool.uml.ui.analysis.activitydiagram.edit.part.ActivityDiagramEditPartFactory"
+            id="nexcore.tool.uml.ui.analysis.activitydiagrameditor"
+            name="nexcore.tool.uml.ui.analysis.activitydiagrameditor">
+      </editor>
+   </extension>
+
+</plugin>

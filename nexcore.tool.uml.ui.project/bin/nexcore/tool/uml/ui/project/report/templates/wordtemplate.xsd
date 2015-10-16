@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://skcc.com/2003/wordtemplate_v1.1" xmlns="http://skcc.com/2003/wordtemplate_v1.1" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+	<xs:element name="image" type="imageElt"/>
+	<xs:element name="foreach" type="foreachElt"/>
+	<xs:element name="print" type="printElt"/>
+	<xs:complexType name="foreachElt">
+		<xs:sequence>
+			<xs:any minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="targetval" type="xs:string"/>
+		<xs:attribute name="arrayval" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="printElt">
+		<xs:sequence>
+			<xs:any minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="var" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="imageElt">
+		<xs:sequence>
+			<xs:any minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="var" type="xs:string"/>
+		<xs:attribute name="title" type="xs:string"/>
+		<xs:attribute name="type" type="xs:string"/>
+		<xs:attribute name="binary" type="xs:boolean"/>
+		<xs:attribute name="width" type="xs:string"/>
+		<xs:attribute name="height" type="xs:string"/>
+		<xs:attribute name="useFixSize" type="xs:boolean"/>
+	</xs:complexType>	
+</xs:schema>

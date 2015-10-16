@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NEXCORE UML Realization Plug-in
+Bundle-SymbolicName: nexcore.tool.uml.ui.realization;singleton:=true
+Bundle-Version: 2.1.0.qualifier
+Bundle-Vendor: SK Holdings
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
+ J2SE-1.5
+Require-Bundle: nexcore.tool.uml.ui.core;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: nexcore.tool.uml.ui.realization.RealizationPlugin
+Bundle-ClassPath: .
+Export-Package: nexcore.tool.uml.ui.realization,
+ nexcore.tool.uml.ui.realization.classdiagram.edit.part,
+ nexcore.tool.uml.ui.realization.sequencediagram.dialog,
+ nexcore.tool.uml.ui.realization.sequencediagram.edit.part,
+ nexcore.tool.uml.ui.realization.sequencediagram.util,
+ nexcore.tool.uml.ui.realization.usecasediagram.edit.part

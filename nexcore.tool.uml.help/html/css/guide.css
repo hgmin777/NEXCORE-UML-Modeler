@@ -1,0 +1,151 @@
+@charset "euc-kr";
+@import "common.css";
+@import "add.css";
+
+
+
+/* 텍스트 강조 박스 */
+.pointTextBox {margin:10px; padding:10px; border:3px solid #99bee5; background-color: #D2E4F7;}
+.pointTextBox01 {margin:10px 10px 10px 35px; padding:10px; border:3px solid #99bee5; background-color: #D2E4F7;}
+.pointTextBox02 {margin:10px 10px 10px 70px; padding:10px; border:3px solid #99bee5; background-color: #D2E4F7;}
+.pointTextBox03 {margin:10px 10px 10px 115px; padding:10px; border:3px solid #99bee5; background-color: #D2E4F7;}
+
+
+/* 목차 */
+
+/* 목차 대제목 01-첫째수준 02-둘째수준 03-셋째수준 */
+.list01 {font-size:1.6em ; font-weight:bold;margin-left:10px; margin-top:10px;}
+.list02 {font-size:1.3em ; font-weight:bold;margin-left:35px;margin-top:10px;}
+.list03 {font-size:1.2em ; font-weight:bold;margin-left:70px;margin-top:10px;}
+
+.list01 a{ color:#000000;text-decoration:none;}
+.list02 a{ color:#000000;text-decoration:none;}
+.list03 a{ color:#000000;text-decoration:none;}
+
+
+
+/* 컨텐츠 */
+
+/* 타이틀 01-첫째수준 02-둘째수준 03-셋째수준 */
+.title01 {font-size:1.6em ; font-weight:bold;margin-left:10px; margin-top:50px;}
+.title02 {font-size:1.4em ; font-weight:bold;margin-left:35px;margin-top:30px;}
+.title03 {font-size:1.2em ; font-weight:bold;margin-left:70px;}
+
+/* 컨텐츠 01-첫째수준 02-둘째수준 03-셋째수준 */
+.title01Cnt {margin:10px 10px 20px 35px;}
+.title02Cnt {margin:10px 10px 20px 70px;}
+.title03Cnt {margin:10px 10px 20px 115px;}
+
+/* 검은점타이틀 01-첫째수준 02-둘째수준 03-셋째수준 */
+.titleBDot01 {font-size:1.6em; font-weight:bold; margin-left:20px;margin-top:50px; background:url(../images/bdot.png) 0px 15px no-repeat;padding-left:15px;}
+.titleBDot02 {font-size:1.4em ; font-weight:bold; margin-left:55px;margin-top:30px;background:url(../images/bdot.png) 0px 12px no-repeat;padding-left:15px;}
+.titleBDot03 {font-size:1.2em ; font-weight:bold; margin-left:100px;background:url(../images/bdot.png) 0px 10px no-repeat;padding-left:15px;}
+
+
+/* 흰점타이틀 01-첫째수준 02-둘째수준 03-셋째수준 */
+.titleWDot01 {font-size:1.6em; font-weight:bold; margin-left:20px; margin-top:50px; background:url(../images/wdot.png) 0px 15px no-repeat;padding-left:15px;}
+.titleWDot02 {font-size:1.4em ; font-weight:bold; margin-left:55px;margin-top:30px; background:url(../images/wdot.png) 0px 12px no-repeat;padding-left:15px;}
+.titleWDot03 {font-size:1.2em ; font-weight:bold; margin-left:100px; background:url(../images/wdot.png) 0px 10px no-repeat;padding-left:15px;}
+
+
+
+
+
+/*분기선*/
+.lineSolid {text-align:left; width:100%; border:1px solid #999999;  margin:30px 0px 10px 0px; padding:0px 0px;}
+.lineDotted {text-align:left; width:100%; border:1px dashed #999999; margin:30px 0px 10px 0px; padding:0px 0px;}
+
+
+
+/*본문 표기법*/
+.fileName { font-style:italic; font-size:1.1em;}
+.menuName { font-weight:bold ; font-size:1.1em;}
+.keyName { font-family:Courier New, Courier, monospace; font-size:1.1em;}
+.pointName { background-color: #FFFF00; font-size:1.1em; padding:0px 5px;}
+
+
+/*이미지*/
+.image {margin:20px 10px 10px 10px; }
+.imgtitle {margin:10px; font-weight:bold;}
+.imgtitleMore {margin:10px; padding:10px; background-color: #ededed;border:1px solid #d7d7d7;}
+
+
+/*이미지 첫째수준 삽입*/
+.image01 {margin:20px 10px 10px 35px; }
+.imgtitle01 {margin:10px 10px 0px 35px; font-weight:bold;}
+.imgtitleMore01 {margin:10px 10px 0px 35px; padding:10px; background-color: #ededed;border:1px solid #d7d7d7;}
+
+/*이미지 둘째수준 삽입*/
+.image02 {margin:30px 10px 10px 70px; }
+.imgtitle02 {margin:10px 10px 0px 70px; font-weight:bold;}
+.imgtitleMore02 {margin:10px 10px 0px 70px; padding:10px; background-color: #ededed;border:1px solid #d7d7d7;}
+
+/*이미지 셋째수준 삽입*/
+.image03 {margin:20px 10px 10px 115px; }
+.imgtitle03 {margin:10px 10px 0px 115px; font-weight:bold;}
+.imgtitleMore03 {margin:10px 10px 0px 115px; padding:10px; background-color: #ededed;border:1px solid #d7d7d7;}
+
+
+
+/* 테이블 STYLE01의 첫째수준 */
+.table01Style01 {margin:0px 10px 0px 35px; border-collapse:collapse;}
+.table01Style01 td {border:1px solid #93BCE6;  padding:3px 8px;}
+.table01Title01 {height:28px; background-color:#5193D5; color:#FFF; font-weight:bold;}
+
+/* 테이블 STYLE01의 둘째수준 */
+.table02Style01 {margin:0px 10px 0px 70px; border-collapse:collapse;}
+.table02Style01 td {border:1px solid #93BCE6;  padding:3px 8px;}
+.table02Title01 {height:28px; background-color:#5193D5; color:#FFF; font-weight:bold;}
+
+/* 테이블 STYLE01의 셋째수준 */
+.table03Style01 {margin:0px 10px 0px 115px; border-collapse:collapse;}
+.table03Style01 td {border:1px solid #93BCE6;  padding:3px 8px;}
+.table03Title01 {height:28px; background-color:#5193D5; color:#FFF; font-weight:bold;}
+
+
+/* 테이블 STYLE02의 첫째수준 */
+.table01Style02 {margin:0px 10px 0px 35px; border-collapse:collapse;}
+.table01Style02 td {border:1px solid #BDB76B; padding:3px 8px;}
+.table01Title02 {height:28px; background-color:#EEE8AA; color:#8B4513; font-weight:bold;}
+
+/* 테이블 STYLE02의 둘째수준 */
+.table02Style02 {margin:0px 10px 0px 70px; border-collapse:collapse;}
+.table02Style02 td {border:1px solid #BDB76B; padding:3px 8px;}
+.table02Title02 {height:28px; background-color:#EEE8AA; color:#8B4513; font-weight:bold;}
+
+/* 테이블 STYLE02의 셋째수준 */
+.table03Style02 {margin:0px 10px 0px 115px; border-collapse:collapse;}
+.table03Style02 td {border:1px solid #BDB76B; padding:3px 8px;}
+.table03Title02 {height:28px; background-color:#EEE8AA; color:#8B4513; font-weight:bold;}
+
+
+/* 테이블 STYLE03의 첫째수준 */
+.table01Style03 {margin:0px 10px 0px 35px; border-collapse:collapse; }
+.table01Style03 td {border:1px solid #999999;  padding:3px 8px;}
+.table01Title03  {height:28px; background-color:#EDEDED; color:#000; font-weight:bold;}
+
+/* 테이블 STYLE03의 둘째수준 */
+.table02Style03 {margin:0px 10px 0px 70px; border-collapse:collapse;}
+.table02Style03 td {border:1px solid #999999;  padding:3px 8px;}
+.table02Title03  {height:28px; background-color:#EDEDED; color:#000; font-weight:bold;}
+
+/* 테이블 STYLE03의 셋째수준 */
+.table03Style03 {margin:0px 10px 0px 115px; border-collapse:collapse;}
+.table03Style03 td {border:1px solid #999999;  padding:3px 8px;}
+.table03Title03  {height:28px; background-color:#EDEDED; color:#000; font-weight:bold;}
+
+
+
+/*소스코드*/
+.sCode { margin:20px 10px 10px 10px;border: 2px inset #F5F5F5 ; padding:20px; background-color:#EFEFEF;font-size:1em;}
+.sCode01 { margin:20px 10px 10px 35px;border: 2px inset #F5F5F5 ; padding:20px; background-color:#EFEFEF;font-size:1em;}
+.sCode02 { margin:20px 10px 10px 70px;border: 2px inset #F5F5F5 ; padding:20px; background-color:#EFEFEF;font-size:1em;}
+.sCode03 { margin:20px 10px 10px 115px;border: 2px inset #F5F5F5 ; padding:20px; background-color:#EFEFEF;font-size:1em;}
+
+
+
+
+
+
+
+

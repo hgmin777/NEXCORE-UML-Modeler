@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NEXCORE UML Analysis Plug-in
+Bundle-SymbolicName: nexcore.tool.uml.ui.analysis;singleton:=true
+Bundle-Version: 2.1.0.qualifier
+Bundle-Activator: nexcore.tool.uml.ui.analysis.AnalysisPlugin
+Require-Bundle: nexcore.tool.uml.ui.core
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
+ J2SE-1.5
+Bundle-Vendor: SK Holdings
+Export-Package: nexcore.tool.uml.ui.analysis,
+ nexcore.tool.uml.ui.analysis.componentdiagram.edit.part

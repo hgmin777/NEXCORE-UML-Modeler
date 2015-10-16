@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NEXCORE UML Manager Plug-in
+Bundle-SymbolicName: nexcore.tool.uml.manager;singleton:=true
+Bundle-Version: 2.1.0.qualifier
+Bundle-Vendor: SK Holdings
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.emf.query;bundle-version="1.2.0";visibility:=reexport,
+ org.eclipse.emf.workspace;bundle-version="1.2.3";visibility:=reexport,
+ org.eclipse.gef;bundle-version="3.4.1";visibility:=reexport,
+ org.junit,
+ nexcore.tool.mdd.core;visibility:=reexport,
+ nexcore.tool.uml.core;visibility:=reexport,
+ nexcore.tool.uml.connector;bundle-version="1.0.0"
+Export-Package: nexcore.tool.uml.manager,
+ nexcore.tool.uml.manager.command,
+ nexcore.tool.uml.manager.extension,
+ nexcore.tool.uml.manager.extension.registry,
+ nexcore.tool.uml.manager.handler,
+ nexcore.tool.uml.manager.transaction,
+ nexcore.tool.uml.manager.util,
+ nexcore.tool.uml.manager.utility
+Bundle-Activator: nexcore.tool.uml.manager.UMLEditorPlugin$Implementation

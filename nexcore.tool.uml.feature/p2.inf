@@ -1,0 +1,14 @@
+# 93
+instructions.configure=\
+	  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0, name:NEXCORE Collaboration Core UI,location:http${#58}//nexcore.skcc.com/alcinous/update/ncp/client/,enabled:true);\
+	  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1, name:NEXCORE Collaboration Core UI,location:http${#58}//nexcore.skcc.com/alcinous/update/ncp/client/,enabled:true);\
+	  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0, name:NEXCORE ALM Suite Common,location:http${#58}//nexcore.skcc.com/alcinous/update/alm/common/,enabled:true);\
+	  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1, name:NEXCORE ALM Suite Common,location:http${#58}//nexcore.skcc.com/alcinous/update/alm/common/,enabled:true);
+
+# 94
+#instructions.configure=\
+#	  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0, name:NEXCORE Collaboration Core UI,location:http${#58}//203.235.211.94/alcinous/update/ncp/nightly/client/,enabled:true);\
+#	  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1, name:NEXCORE Collaboration Core UI,location:http${#58}//203.235.211.94/alcinous/update/ncp/nightly/client/,enabled:true);\
+#	  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0, name:NEXCORE ALM Suite Common,location:http${#58}//203.235.211.94/alcinous/update/alm/nightly/common/,enabled:true);\
+#	  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1, name:NEXCORE ALM Suite Common,location:http${#58}//203.235.211.94/alcinous/update/alm/nightly/common/,enabled:true);
+	  

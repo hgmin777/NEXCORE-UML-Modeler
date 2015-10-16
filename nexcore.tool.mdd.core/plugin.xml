@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="nexcore.tool.mdd.core.domain.model.handler" name="MDD Domain Model Handler" schema="schema/nexcore.tool.mdd.core.domain.model.handler.exsd"/>
+   <extension-point id="nexcore.tool.mdd.core.semantic.model.handler" name="MDD Semantic Model Handler" schema="schema/nexcore.tool.mdd.core.semantic.model.handler.exsd"/>
+   <extension-point id="nexcore.tool.mdd.core.notation.model.handler" name="MDD Notation Model Handler" schema="schema/nexcore.tool.mdd.core.notation.model.handler.exsd"/>
+
+</plugin>

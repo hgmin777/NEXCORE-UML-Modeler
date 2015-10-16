@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<!--
+   <extension
+         point="nexcore.tool.core.security.nexcorePolicy">
+      <nexcorePolicy
+            filePath="resource/nexcore.policy"
+            name="nexcore.tool.uml.core.nexcorePolicy">
+      </nexcorePolicy>
+   </extension>
+<extension
+         point="nexcore.tool.core.product">
+      <product
+            name="NEXCORE UML Modeler"
+            productId="nexcore.tool.uml.core"
+            version="1.2.0">
+      </product>
+</extension>
+-->
+<extension
+      point="org.eclipse.core.runtime.products">
+   <product
+         application="nexcore.tool.uml.core"
+         name="NEXCORE UML Modeler">
+   </product>
+</extension> 
+
+
+
+</plugin>

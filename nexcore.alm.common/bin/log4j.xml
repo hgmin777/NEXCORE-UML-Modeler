@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="Console" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p %l | %m%n" />
+        </layout>
+    </appender>
+    
+    <appender name="nexcore"
+        class="org.apache.log4j.RollingFileAppender">
+        <param name="encoding" value="MS949" />
+        <param name="MaxFileSize" value="512KB" />
+        <param name="MaxBackupIndex" value="4" />
+        <param name="File" value="./skcc/log/nexcore.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="$_S_$%n%c{1}|+|%d{yyyyMMddHHmmss}%n%m%n$_E_$%n" />
+        </layout>
+    </appender>
+    
+    <appender name="upi"
+        class="org.apache.log4j.RollingFileAppender">
+        <param name="encoding" value="MS949" />
+        <param name="MaxFileSize" value="512KB" />
+        <param name="MaxBackupIndex" value="4" />
+        <param name="File" value="./skcc/log/permission.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="%d{yyyy-MM-dd HH:mm:ss}%n%m%n%n" />
+        </layout>
+    </appender>
+    
+    <appender name="update"
+        class="org.apache.log4j.RollingFileAppender">
+        <param name="encoding" value="MS949" />
+        <param name="MaxFileSize" value="512KB" />
+        <param name="MaxBackupIndex" value="4" />
+        <param name="File" value="./skcc/log/update.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="$_S_$%n%c{1}|+|%d{yyyyMMddHHmmss}%n%m%n$_E_$%n" />
+        </layout>
+    </appender>
+    
+    <appender name="io"
+        class="org.apache.log4j.RollingFileAppender">
+        <param name="encoding" value="MS949" />
+        <param name="MaxFileSize" value="512KB" />
+        <param name="MaxBackupIndex" value="4" />
+        <param name="File" value="./skcc/log/io.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="$_S_$%n%c{1}|+|%d{yyyyMMddHHmmss}%n%m%n$_E_$%n" />
+        </layout>
+    </appender>
+    
+    <appender name="transaction"
+        class="org.apache.log4j.RollingFileAppender">
+        <param name="encoding" value="MS949" />
+        <param name="MaxFileSize" value="512KB" />
+        <param name="MaxBackupIndex" value="4" />
+        <param name="File" value="./skcc/log/transaction.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="$_S_$%n%c{1}|+|%d{yyyyMMddHHmmss}%n%m%n$_E_$%n" />
+        </layout>
+    </appender>
+     
+    <appender name="debug"
+        class="org.apache.log4j.RollingFileAppender">
+        <param name="Threshold" value="debug"/>
+        <param name="encoding" value="MS949" />
+        <param name="MaxFileSize" value="512KB" />
+        <param name="MaxBackupIndex" value="4" />
+        <param name="File" value="./skcc/log/core/debug.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="$_S_$%n%c{1}|+|%d{yyyyMMddHHmmss}|+|%C|+|%C{1}|+|%M()|+|%F|+|%L%n%m%n$_E_$%n" />
+        </layout>
+    </appender>
+    <appender name="info"
+        class="org.apache.log4j.RollingFileAppender">
+        <param name="Threshold" value="INFO"/>
+        <param name="encoding" value="MS949" />
+        <param name="MaxFileSize" value="512KB" />
+        <param name="MaxBackupIndex" value="4" />
+        <param name="File" value="./skcc/log/core/info.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="$_S_$%n%c{1}|+|%d{yyyyMMddHHmmss}|+|%C|+|%C{1}|+|%M()|+|%F|+|%L%n%m%n$_E_$%n" />
+        </layout>
+    </appender>
+
+<!-- 
+    <appender name="warn"
+        class="org.apache.log4j.RollingFileAppender">
+        <param name="Threshold" value="warn"/>
+        <param name="encoding" value="MS949" />
+        <param name="MaxFileSize" value="512KB" />
+        <param name="MaxBackupIndex" value="4" />
+        <param name="File" value="./skcc/log/core/warn.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="$_S_$%n%c{1}|+|%d{yyyyMMddHHmmss}|+|%C|+|%C{1}|+|%M()|+|%F|+|%L%n%m%n$_E_$%n" />
+        </layout>
+    </appender>
+-->
+    <appender name="error"
+        class="org.apache.log4j.RollingFileAppender">
+        <param name="Threshold" value="error"/>
+        <param name="encoding" value="MS949" />
+        <param name="MaxFileSize" value="512KB" />
+        <param name="MaxBackupIndex" value="4" />
+        <param name="File" value="./skcc/log/core/error.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="$_S_$%n%c{1}|+|%d{yyyyMMddHHmmss}|+|%C|+|%C{1}|+|%M()|+|%F|+|%L%n%m%n$_E_$%n" />
+        </layout>
+    </appender>
+
+<!--
+    <appender name="fatal"
+        class="org.apache.log4j.RollingFileAppender">
+        <param name="Threshold" value="fatal"/>
+        <param name="encoding" value="MS949" />
+        <param name="MaxFileSize" value="512KB" />
+        <param name="MaxBackupIndex" value="4" />
+        <param name="File" value="./skcc/log/core/fatal.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="$_S_$%n%c{1}|+|%d{yyyyMMddHHmmss}|+|%C|+|%C{1}|+|%M()|+|%F|+|%L%n%m%n$_E_$%n" />
+        </layout>
+    </appender>
+-->
+
+    <!-- Nexcore tool core -->
+    <logger name="nexcore.tool.core" >
+        <level value="all" />
+        <appender-ref ref="nexcore" />
+        <appender-ref ref="debug" />
+        <appender-ref ref="info" />
+        <appender-ref ref="error" />
+    </logger>
+    
+    <logger name="nexcore.tool.core.UPI">
+        <level value="info" />
+        <appender-ref ref="nexcore" />
+        <appender-ref ref="upi" />
+    </logger>
+    
+    <logger name="nexcore.tool.core.PUI">
+        <level value="info" />
+        <appender-ref ref="nexcore" />
+        <appender-ref ref="update" />
+    </logger>
+    
+    <logger name="nexcore.tool.core.SUI">
+        <level value="info" />
+        <appender-ref ref="nexcore" />
+        <appender-ref ref="update" />
+    </logger>
+    
+    <logger name="nexcore.tool.core.IOI">
+        <level value="info" />
+        <appender-ref ref="nexcore" />
+        <appender-ref ref="io" />
+    </logger>
+    
+    <logger name="nexcore.tool.core.TXI">
+        <level value="info" />
+        <appender-ref ref="nexcore" />
+        <appender-ref ref="transaction" />
+    </logger>
+    <!--
+    <root>
+        <level value="info"/>
+        <appender-ref ref="Console" />
+        <appender-ref ref="nexcore" />
+    </root>
+	-->
+</log4j:configuration>

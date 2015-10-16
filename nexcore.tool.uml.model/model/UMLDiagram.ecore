@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="umldiagram"
+    nsURI="http://nexcore.skcc.com/tools/uml/umldiagram" nsPrefix="umd">
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractConnection" abstract="true"
+      eSuperTypes="#//AbstractView">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//AbstractView" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceAnchor" eType="#//Dimension"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//AbstractView" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetAnchor" eType="#//Dimension"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bendPointList" upperBound="-1"
+        eType="#//BendPoint" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="labels" upperBound="5"
+        eType="#//LabelNode" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="relationType" lowerBound="1"
+        eType="#//RelationType" unsettable="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractNode" abstract="true" eSuperTypes="#//AbstractView">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
+        defaultValueLiteral="0" unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="height" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
+        defaultValueLiteral="0" unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="incomingConnectionList"
+        upperBound="-1" eType="#//AbstractConnection" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceAnchorMap" upperBound="-1"
+        eType="#//Map" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outgoingConnectionList"
+        upperBound="-1" eType="#//AbstractConnection" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetAnchorMap" upperBound="-1"
+        eType="#//Map" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isContainer" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nodeType" eType="#//NodeType"
+        unsettable="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractView" abstract="true" eSuperTypes="platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Element">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="umlModel" eType="ecore:EClass platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//Element"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fillColor" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"
+        unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lineColor" eType="ecore:EDataType platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore#//String"
+        unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fontColor" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"
+        unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fontName" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fontStyle" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fontSize" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
+        unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="x" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
+        defaultValueLiteral="0" unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="y" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
+        defaultValueLiteral="0" unsettable="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Attachement" eSuperTypes="#//AbstractConnection"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BendPoint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="firstPosition" lowerBound="1"
+        eType="#//Dimension" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="secondPosition" lowerBound="1"
+        eType="#//Dimension" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="weight" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Float"
+        unsettable="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="LabelType">
+    <eLiterals name="Label"/>
+    <eLiterals name="SourceRole" value="1"/>
+    <eLiterals name="TargetRole" value="2"/>
+    <eLiterals name="SourceMultiplex" value="3"/>
+    <eLiterals name="TargetMultiplex" value="4"/>
+    <eLiterals name="Stereotype" value="5" literal="Stereotype"/>
+    <eLiterals name="Compartment" value="6" literal="Compartment"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ConnectionLabelTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ConnectionLabelType:Object"/>
+      <details key="baseType" value="ConnectionLabelType"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ContainerNode" eSuperTypes="#//AbstractNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nodeList" upperBound="-1"
+        eType="#//AbstractNode" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connectionList" upperBound="-1"
+        eType="#//AbstractConnection" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Diagram" eSuperTypes="#//AbstractNode">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//DiagramType"
+        unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nodeList" upperBound="-1"
+        eType="#//AbstractNode" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connectionList" upperBound="-1"
+        eType="#//AbstractConnection" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DiagramType">
+    <eLiterals name="UseCaseDiagram"/>
+    <eLiterals name="ClassDiagram" value="1"/>
+    <eLiterals name="SequenceDiagram" value="2"/>
+    <eLiterals name="ComponentDiagram" value="3"/>
+    <eLiterals name="ActivityDiagram" value="4"/>
+    <eLiterals name="StateMachineDiagram" value="5"/>
+    <eLiterals name="DeploymentDiagram" value="6"/>
+    <eLiterals name="CompositeStructureDiagram" value="7"/>
+    <eLiterals name="CommunicationDiagram" value="8"/>
+    <eLiterals name="FreeFormDiagram" value="9"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DiagramTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="DiagramType:Object"/>
+      <details key="baseType" value="DiagramType"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Dimension">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="width"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="height" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int" unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="height"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Map">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NotationNode" eSuperTypes="#//AbstractNode">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Regions" upperBound="-1"
+        eType="#//RelationType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="compartmentList" upperBound="-1"
+        eType="#//AbstractNode" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="labels" upperBound="-1"
+        eType="#//LabelNode" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="NodeType">
+    <eLiterals name="Note"/>
+    <eLiterals name="Text" value="1"/>
+    <eLiterals name="Activity" value="1100"/>
+    <eLiterals name="ActivityPartition" value="1200"/>
+    <eLiterals name="StructuredActivityNode" value="1300"/>
+    <eLiterals name="ComponentStructureCompartment" value="1400"/>
+    <eLiterals name="CombinedFragment" value="1500" literal="CombinedFragment"/>
+    <eLiterals name="AlternativeCombinedFragment" value="1501" literal="AlternativeCombinedFragment"/>
+    <eLiterals name="BreakCombinedFragment" value="1502" literal="BreakCombinedFragment"/>
+    <eLiterals name="LoopCombinedFragment" value="1503"/>
+    <eLiterals name="SequenceCombinedFragment" value="1504" literal="SequenceCombinedFragment"/>
+    <eLiterals name="StrictCombinedFragment" value="1505" literal="StrictCombinedFragment"/>
+    <eLiterals name="ParallelCombinedFragment" value="1506"/>
+    <eLiterals name="CriticalCombinedFragment" value="1507" literal="CriticalCombinedFragment"/>
+    <eLiterals name="NegativeCombinedFragment" value="1508"/>
+    <eLiterals name="AssertCombinedFragment" value="1509"/>
+    <eLiterals name="IgnoreCombinedFragment" value="1510"/>
+    <eLiterals name="ConsiderCombinedFragment" value="1511"/>
+    <eLiterals name="OptionCombinedFragment" value="1512"/>
+    <eLiterals name="CombinedFragmentName" value="1513" literal="CombinedFragmentName"/>
+    <eLiterals name="InteractionOperand" value="1520" literal="InteractionOperand"/>
+    <eLiterals name="Guard" value="1521" literal="Guard"/>
+    <eLiterals name="OptionIf" value="1530" literal="OptionIf"/>
+    <eLiterals name="AlternativeSwitch" value="1532" literal="AlternativeSwitch"/>
+    <eLiterals name="AlternativeIfElse" value="1531" literal="AlternativeIfElse"/>
+    <eLiterals name="LoopWhile" value="1533" literal="LoopWhile"/>
+    <eLiterals name="LoopFor" value="1534" literal="LoopFor"/>
+    <eLiterals name="Region" value="1600"/>
+    <eLiterals name="State" value="1700"/>
+    <eLiterals name="CompositeStructure" value="1800"/>
+    <eLiterals name="AcceptEventAction" value="5010"/>
+    <eLiterals name="ActivityFinalNode" value="5020"/>
+    <eLiterals name="ActivityParameterNode" value="5030"/>
+    <eLiterals name="CallBehaviorAction" value="5040"/>
+    <eLiterals name="CallOperationAction" value="5050"/>
+    <eLiterals name="CentralBufferNode" value="5060"/>
+    <eLiterals name="DataStoreNode" value="5070"/>
+    <eLiterals name="DecisionNode" value="5080"/>
+    <eLiterals name="ExpansionNode" value="5090"/>
+    <eLiterals name="FlowFinalNode" value="5100"/>
+    <eLiterals name="ForkNode" value="5110"/>
+    <eLiterals name="InitialNode" value="5120"/>
+    <eLiterals name="InputPin" value="5130"/>
+    <eLiterals name="JoinNode" value="5140"/>
+    <eLiterals name="MergeNode" value="5150"/>
+    <eLiterals name="OpaqueAction" value="5160"/>
+    <eLiterals name="OutputPin" value="5170"/>
+    <eLiterals name="SendSignalAction" value="5180"/>
+    <eLiterals name="ValuePin" value="5190"/>
+    <eLiterals name="Artifact" value="5200"/>
+    <eLiterals name="Class" value="5210"/>
+    <eLiterals name="Collaboration" value="5220"/>
+    <eLiterals name="DataType" value="5230"/>
+    <eLiterals name="Enumeration" value="5240"/>
+    <eLiterals name="Interface" value="5250"/>
+    <eLiterals name="Package" value="5260"/>
+    <eLiterals name="Signal" value="5270"/>
+    <eLiterals name="Component" value="5290"/>
+    <eLiterals name="DestructionEvent" value="5310"/>
+    <eLiterals name="InteractionUse" value="5320"/>
+    <eLiterals name="Lifeline" value="5330"/>
+    <eLiterals name="Message" value="5340"/>
+    <eLiterals name="SynchronousMessage" value="5341"/>
+    <eLiterals name="ASynchronousMessage" value="5342"/>
+    <eLiterals name="CreateMessage" value="5343"/>
+    <eLiterals name="DestroyMessage" value="5344"/>
+    <eLiterals name="Pseudostate" value="5350"/>
+    <eLiterals name="ChoicePoint" value="5351"/>
+    <eLiterals name="JunctionPoint" value="5352"/>
+    <eLiterals name="DeepHistory" value="5353"/>
+    <eLiterals name="ShallowHistory" value="5354"/>
+    <eLiterals name="Join" value="5355"/>
+    <eLiterals name="Fork" value="5356"/>
+    <eLiterals name="EntryPoint" value="5357"/>
+    <eLiterals name="ExitPoint" value="5358"/>
+    <eLiterals name="Terminate" value="5359"/>
+    <eLiterals name="FinalState" value="5370"/>
+    <eLiterals name="StateInvariant" value="5390"/>
+    <eLiterals name="Transition" value="5400"/>
+    <eLiterals name="CollaborationUse" value="5410"/>
+    <eLiterals name="Property" value="5420"/>
+    <eLiterals name="Port" value="5430"/>
+    <eLiterals name="Actor" value="5440"/>
+    <eLiterals name="ElementImport" value="5450"/>
+    <eLiterals name="Generalization" value="5460"/>
+    <eLiterals name="UseCase" value="5480"/>
+    <eLiterals name="Line" value="5531" literal="Line"/>
+    <eLiterals name="LifeLineBehavior" value="5532" literal="LifeLineBehavior"/>
+    <eLiterals name="Lolly" value="6001" literal="Lolly"/>
+    <eLiterals name="HalfLolly" value="6002" literal="HalfLolly"/>
+    <eLiterals name="Name" value="7000" literal="Name"/>
+    <eLiterals name="Stereotype" value="8000" literal="Stereotype"/>
+    <eLiterals name="Attributes" value="9000" literal="Attributes"/>
+    <eLiterals name="Attribute" value="9001" literal="Attribute"/>
+    <eLiterals name="Operations" value="9002" literal="Operations"/>
+    <eLiterals name="Operation" value="9003" literal="Operation"/>
+    <eLiterals name="ProvidedInterfaces" value="9004" literal="ProvidedInterfaces"/>
+    <eLiterals name="ProvidedInterface" value="9005" literal="ProvidedInterface"/>
+    <eLiterals name="RequiredInterfaces" value="9006" literal="RequiredInterfaces"/>
+    <eLiterals name="RequiredInterface" value="9007" literal="RequiredInterface"/>
+    <eLiterals name="RequiredInterfaceOperation" value="9008" literal="RequiredInterfaceOperation"/>
+    <eLiterals name="ProvidedInterfaceOperation" value="9009" literal="ProvidedInterfaceOperation"/>
+    <eLiterals name="EnumerationLiterals" value="9010" literal="EnumerationLiterals"/>
+    <eLiterals name="EnumerationLiteral" value="9011" literal="EnumerationLiteral"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="NodeTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="NodeType:Object"/>
+      <details key="baseType" value="NodeType"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Relation" eSuperTypes="#//AbstractConnection"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="RelationType">
+    <eLiterals name="Attachement" value="2"/>
+    <eLiterals name="Association" value="9010"/>
+    <eLiterals name="Aggregation" value="9011"/>
+    <eLiterals name="Composition" value="9012"/>
+    <eLiterals name="DirectedAggregation" value="9013"/>
+    <eLiterals name="DirectedAssociation" value="9014"/>
+    <eLiterals name="DirectedComposition" value="9015"/>
+    <eLiterals name="Connector" value="9020"/>
+    <eLiterals name="ControlFlow" value="9030"/>
+    <eLiterals name="Dependency" value="9040"/>
+    <eLiterals name="Abstraction" value="9041"/>
+    <eLiterals name="Extend" value="9042"/>
+    <eLiterals name="Include" value="9043"/>
+    <eLiterals name="PackageImport" value="9044"/>
+    <eLiterals name="PackageMerge" value="9045"/>
+    <eLiterals name="Usage" value="9046"/>
+    <eLiterals name="Generalization" value="9050"/>
+    <eLiterals name="ObjectFlow" value="9060"/>
+    <eLiterals name="Realization" value="9070"/>
+    <eLiterals name="ComponentRealization" value="9080"/>
+    <eLiterals name="InterfaceRealization" value="9090"/>
+    <eLiterals name="Message" value="9100"/>
+    <eLiterals name="SynchronousMessage" value="9101"/>
+    <eLiterals name="ASynchronousMessage" value="9102"/>
+    <eLiterals name="CreateMessage" value="9103"/>
+    <eLiterals name="DestroyMessage" value="9104"/>
+    <eLiterals name="ReplyMessage" value="9105"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="RelationTypeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="RelationType:Object"/>
+      <details key="baseType" value="RelationType"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LifeLineNode" eSuperTypes="#//NotationNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="line" lowerBound="1" eType="#//Line"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="behaviorList" upperBound="-1"
+        eType="#//NotationNode" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Line" eSuperTypes="#//NotationNode"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RegionType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RegionKind" lowerBound="1"
+        eType="#//RegionEnumType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="RegionSize" lowerBound="1"
+        eType="#//Dimension"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RegionEnumType">
+    <eLiterals name="Attribute"/>
+    <eLiterals name="Operation" value="1"/>
+    <eLiterals name="RequiredInterface" value="2"/>
+    <eLiterals name="ProvidedInterface" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LabelNode" eSuperTypes="#//AbstractNode">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//LabelType"
+        unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="compartmentList" upperBound="-1"
+        eType="#//LabelNode" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+</ecore:EPackage>

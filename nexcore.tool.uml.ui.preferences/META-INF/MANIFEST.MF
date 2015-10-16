@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: nexcore.tool.uml.ui.preferences;singleton:=true
+Bundle-Version: 2.1.0.qualifier
+Bundle-Activator: nexcore.tool.uml.ui.preferences.PreferencesPlugin
+Require-Bundle: nexcore.tool.uml.ui.project,
+ org.eclipse.ui.navigator;bundle-version="3.3.102"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Localization: plugin
+Bundle-Vendor: %Bundle-Vendor

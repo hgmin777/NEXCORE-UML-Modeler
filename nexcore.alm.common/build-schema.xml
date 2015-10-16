@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<project name="code,message-build-schema" default="all" basedir="." >
+	
+	<!-- ################################################################## -->
+	<!--  환경 설정                                                                                                                      -->
+	<!-- ################################################################## -->
+	
+	<property name="jdbc.driver.dir" value="../nexcore.tool.core.service.runtime/web/WEB-INF/lib/" />
+	<property name="jdbc.driver.jar" value="derbyclient.jar" />
+	<property name="jdbc.driver"     value="org.apache.derby.jdbc.ClientDriver" />
+	<property name="jdbc.url"        value="jdbc:derby://localhost:1527//nexcore-tools/core/code;create=true" />
+	<property name="jdbc.user"       value="nexcore" />
+	<property name="jdbc.passwd"     value="nexcore" />
+	<property name="script.dir"      value="bin/nexcore/tool/core/code" />
+	<property name="script.file"     value="schema.sql" />
+	
+	<!-- ################################################################## -->
+	
+	<target name="all">
+		<echo>Generating DB schema for code, message service ...</echo>
+		<antcall target="execute-sql-script" />
+		<echo>Done.</echo>
+	</target>
+
+	<target name="execute-sql-script">
+		<sql driver="${jdbc.driver}" url="${jdbc.url}" userid="${jdbc.user}" password="${jdbc.passwd}" onerror="continue" encoding="UTF-8" >
+			<classpath>
+				<fileset dir="${jdbc.driver.dir}" includes="${jdbc.driver.jar}" />
+			</classpath>
+			<fileset dir="${script.dir}">
+				<include name="${script.file}" />
+			</fileset>
+		</sql>
+	</target>
+	
+</project>

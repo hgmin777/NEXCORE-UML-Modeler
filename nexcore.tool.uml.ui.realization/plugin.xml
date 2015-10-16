@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="nexcore.tool.uml.ui.realization.classdiagram.editor.ClassDiagramEditor"
+            contributorClass="nexcore.tool.uml.ui.realization.classdiagram.action.ClassDiagramActionContributor"
+            default="false"
+            extensions="classdiagram"
+            icon="icons/ClassDiagram.gif"
+            id="nexcore.tool.uml.ui.realization.classdiagrameditor"
+            name="Class Diagram Editor">
+      </editor>
+      <editor
+            class="nexcore.tool.uml.ui.realization.usecasediagram.editor.UseCaseDiagramEditor"
+            contributorClass="nexcore.tool.uml.ui.realization.usecasediagram.action.UseCaseDiagramActionContributor"
+            default="false"
+            extensions="usecasediagram"
+            icon="icons/UsecaseDiagram.gif"
+            id="nexcore.tool.uml.ui.realization.usecasediagrameditor"
+            name="UseCase Diagram editor">
+      </editor>
+      <editor
+            class="nexcore.tool.uml.ui.realization.sequencediagram.editor.SequenceDiagramEditor"
+            contributorClass="nexcore.tool.uml.ui.realization.sequencediagram.action.SequeceDiagramActionContributor"
+            default="false"
+            icon="icons/SequenceDiagram.gif"
+            id="nexcore.tool.uml.ui.realization.sequencediagrameditor"
+            name="Sequence Diagram Editor">
+      </editor>
+   </extension>
+
+   <extension
+         point="nexcore.tool.uml.ui.core.editor.extension">
+      <editor
+            editPartFactory="nexcore.tool.uml.ui.realization.classdiagram.edit.part.ClassDiagramEditPartFactory"
+            id="nexcore.tool.uml.ui.realization.classdiagrameditor"
+            name="nexcore.tool.uml.ui.realization.classdiagrameditor">
+      </editor>
+      <editor
+            editPartFactory="nexcore.tool.uml.ui.realization.sequencediagram.edit.part.SequenceDiagramEditPartFactory"
+            id="nexcore.tool.uml.ui.realization.sequencediagrameditor"
+            name="nexcore.tool.uml.ui.realization.sequencediagrameditor">
+      </editor>
+      <editor
+            editPartFactory="nexcore.tool.uml.ui.realization.usecasediagram.edit.part.UseCaseDiagramEditPartFactory"
+            id="nexcore.tool.uml.ui.realization.usecasediagrameditor"
+            name="nexcore.tool.uml.ui.realization.usecasediagrameditor">
+      </editor>
+   </extension>
+</plugin>

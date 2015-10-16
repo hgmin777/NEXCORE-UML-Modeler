@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="projectinformation"
+    nsURI="http://nexcore.skcc.com/tools/uml/projectinformation" nsPrefix="pi">
+  <eClassifiers xsi:type="ecore:EClass" name="ProjectElement" eSuperTypes="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ProjectName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ProjectCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ProjectPhase" eType="#//ProjectPhaseType"
+        defaultValueLiteral="LogicalDesign"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RelatedRMProjectId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ModelVersion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ProjectPhaseType">
+    <eLiterals name="Analysis"/>
+    <eLiterals name="LogicalDesign" value="1"/>
+    <eLiterals name="PhysicalDesign" value="2"/>
+    <eLiterals name="Development" value="3"/>
+    <eLiterals name="UnitTest" value="4"/>
+    <eLiterals name="IntegrationTest" value="5"/>
+  </eClassifiers>
+</ecore:EPackage>

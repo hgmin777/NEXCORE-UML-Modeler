@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2012 SK C&amp;C Co., Ltd. All rights reserved. &#xD;&#xA;&#xD;&#xA;This software is the confidential and proprietary information of SK C&amp;C. &#xD;&#xA;You shall not disclose such confidential information and shall use it &#xD;&#xA;only in accordance with the terms of the license agreement you entered into &#xD;&#xA;with SK C&amp;C."
+    modelDirectory="/nexcore.tool.mda.model/src/java" editDirectory="/nexcore.tool.mda.model/src/java"
+    editorDirectory="/nexcore.tool.mda.model/src/java" modelPluginID="nexcore.tool.mda.model"
+    modelName="OperationBody" editPluginClass="nexcore.tool.mda.model.operationbody.provider.OperationBodyEditPlugin"
+    editorPluginClass="nexcore.tool.mda.model.operationbody.presentation.OperationBodyEditorPlugin"
+    testsDirectory="/nexcore.tool.mda.model/src/test" testSuiteClass="nexcore.tool.mda.model.operationbody.tests.OperationBodyAllTests"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" testsPluginID="nexcore.tool.mda.model"
+    language="" interfaceNamePattern="">
+  <foreignModel>OperationBody.ecore</foreignModel>
+  <genPackages prefix="Operationbody" basePackage="nexcore.tool.mda.model.developer"
+      disposableProviderFactory="true" fileExtensions="opb" ecorePackage="OperationBody.ecore#/">
+    <genClasses ecoreClass="OperationBody.ecore#//Operation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OperationBody.ecore#//Operation/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OperationBody.ecore#//Operation/qualifiedName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OperationBody.ecore#//Operation/fragment"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference OperationBody.ecore#//Operation/message"/>
+    </genClasses>
+    <genClasses ecoreClass="OperationBody.ecore#//CombinedFragment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OperationBody.ecore#//CombinedFragment/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OperationBody.ecore#//CombinedFragment/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OperationBody.ecore#//CombinedFragment/interactionOperator"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference OperationBody.ecore#//CombinedFragment/operand"/>
+    </genClasses>
+    <genClasses ecoreClass="OperationBody.ecore#//Operand">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OperationBody.ecore#//Operand/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OperationBody.ecore#//Operand/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OperationBody.ecore#//Operand/guard"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference OperationBody.ecore#//Operand/message"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference OperationBody.ecore#//Operand/fragment"/>
+    </genClasses>
+    <genClasses ecoreClass="OperationBody.ecore#//Message">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OperationBody.ecore#//Message/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OperationBody.ecore#//Message/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OperationBody.ecore#//Message/messageSort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OperationBody.ecore#//Message/operationQName"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

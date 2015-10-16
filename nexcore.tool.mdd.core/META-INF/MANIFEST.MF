@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NEXCORE MDD Core Plug-in
+Bundle-SymbolicName: nexcore.tool.mdd.core;singleton:=true
+Bundle-Version: 2.1.0.qualifier
+Bundle-Activator: nexcore.tool.mdd.core.MDDCorePlugin
+Bundle-Vendor: SK Holdings
+Require-Bundle: org.eclipse.emf.transaction,
+ nexcore.tool.mda.model;visibility:=reexport,
+ nexcore.tool.uml.model;visibility:=reexport
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: nexcore.tool.mdd.core,
+ nexcore.tool.mdd.core.extension,
+ nexcore.tool.mdd.core.registry,
+ nexcore.tool.mdd.core.util

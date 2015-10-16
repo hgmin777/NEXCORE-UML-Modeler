@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <!-- extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="NEXCORE ALM Suite Session Refresh"
+            visible="true"
+            id="nexcore.alm.suite.session.refresh.actionset">
+         <action
+               label="Session Refresh"
+               icon="image/session_refresh.png"
+               class="nexcore.alm.common.ui.internal.action.RefreshSessionAction"
+               tooltip="Session Refresh"
+               toolbarPath="nexcore.alm"
+               id="nexcore.alm.common.ui.internal.action.refreshsessionaction">
+         </action>
+      </actionSet>
+   </extension -->     
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="nexcore.alm.common.ui.preference.NexcorePreference"
+            id="nexcore.pref"
+            name="%page.name.0">
+      </page>
+   </extension>       
+</plugin>

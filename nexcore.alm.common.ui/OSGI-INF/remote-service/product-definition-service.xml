@@ -1,0 +1,13 @@
+<service-descriptions xmlns="http://www.osgi.org/xmlns/sd/v1.0.0">
+   <service-description> 
+    <provide interface="nexcore.platform.foundation.configuration.core.service.IProductDefinitionService" />
+     <property name="service.exported.interfaces">*</property> 
+	  <property name="service.exported.configs">org.apache.cxf.rs</property> 
+	  <property name="service.exported.intents">HTTP</property> 
+	  <property name="org.apache.cxf.rs.address">/ncs/fd/cfg/productDefinition</property>
+	  <property name="org.apache.cxf.rs.databinding">jaxb</property> 
+	  	<property name="org.apache.cxf.rs.provider">nexcore.platform.foundation.core.exception.CustomExceptionMapper,
+nexcore.platform.foundation.core.exception.CustomResponseExceptionMapper
+</property>
+  </service-description>
+</service-descriptions>

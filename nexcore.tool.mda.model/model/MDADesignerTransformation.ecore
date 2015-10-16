@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="transformation"
+    nsURI="http://nexcore.skcc.com/tools/mda/designer/transformation" nsPrefix="dst">
+  <eClassifiers xsi:type="ecore:EClass" name="RuleSet">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="structureRules" upperBound="-1"
+        eType="#//SourceStructureTransformationData" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="behaviorRules" upperBound="-1"
+        eType="#//BehaviorTransformationData" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceModelLocation" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceProfileLocation"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetModelLocation" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetProfileLocation"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SourceStructureTransformationData">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceType" lowerBound="1"
+        eType="#//SourceType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceLocation" lowerBound="1"
+        eType="#//LocationType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetStructureTransformationDataSet"
+        lowerBound="1" upperBound="-1" eType="#//TargetStructureTransformationData"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SourceType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceName" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TargetStructureTransformationData">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataName" lowerBound="1"
+        eType="#//DataNameType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetCreationType" lowerBound="1"
+        eType="#//TargetCreationType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetLocation" lowerBound="1"
+        eType="#//LocationType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetApplicableStereotype"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetType" lowerBound="1"
+        eType="#//TargetType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" upperBound="-1"
+        eType="#//ParentType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetName" lowerBound="1"
+        eType="#//NameType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="applicationType" lowerBound="1"
+        eType="#//ApplicationType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="propertyCreation" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="propertyApplicableStereotype"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operationCreation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operationApplicableStereotype"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataNameType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataName" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TargetCreationType">
+    <eLiterals name="self"/>
+    <eLiterals name="derived" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LocationType">
+    <eOperations name="toString" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" lowerBound="1"
+        upperBound="-1" eType="#//LocationSegment" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LocationSegment">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sequence" lowerBound="1"
+        eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="locationName" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="locationKeyword" eType="#//LocationKeywordType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="LocationKeywordType">
+    <eLiterals name="none"/>
+    <eLiterals name="base" value="1"/>
+    <eLiterals name="self" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TargetType">
+    <eLiterals name="None"/>
+    <eLiterals name="Component" value="1"/>
+    <eLiterals name="Interface" value="2"/>
+    <eLiterals name="Class" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NameType">
+    <eOperations name="toString" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="prefix" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="namePart" lowerBound="1"
+        eType="#//NamePartType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="postfix" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamePartType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="#//NameKeywordType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="capitalization" lowerBound="1"
+        eType="#//CapitalizationType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="NameKeywordType">
+    <eLiterals name="base" literal="base"/>
+    <eLiterals name="self" value="1" literal="self"/>
+    <eLiterals name="operation" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CapitalizationType">
+    <eLiterals name="none" literal=""/>
+    <eLiterals name="first" value="1"/>
+    <eLiterals name="all" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ApplicationType">
+    <eLiterals name="merging" literal="merging"/>
+    <eLiterals name="each" value="1" literal="each"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BehaviorTransformationData">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceRelation" lowerBound="1"
+        eType="#//SourceRelationType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="remark" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="self" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="behaviorTransformationDetailDataSet"
+        lowerBound="1" upperBound="-1" eType="#//BehaviorTransformationDetailData"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SourceRelationType">
+    <eOperations name="toString" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//SourceType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//SourceType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="selfRelation" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BehaviorTransformationDetailData">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sequence" lowerBound="1"
+        eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetRelation" lowerBound="1"
+        eType="#//TargetRelationType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operation" lowerBound="1"
+        eType="#//OperationType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operationApplicableStereotype"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="message" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TargetRelationType">
+    <eOperations name="toString" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//DataNameType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//DataNameType" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OperationType">
+    <eOperations name="toString" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operationApplicationType"
+        lowerBound="1" eType="#//OperationApplicationType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="assignableOperationName"
+        eType="#//NameType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="userDefinedOperationName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="OperationApplicationType">
+    <eLiterals name="none" literal="none"/>
+    <eLiterals name="same_type" value="1" literal="same_type"/>
+    <eLiterals name="user_defined" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParentType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeName" lowerBound="1"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="extensionType" lowerBound="1"
+        eType="#//ExtensionType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ExtensionType">
+    <eLiterals name="extends"/>
+    <eLiterals name="implements" value="1"/>
+  </eClassifiers>
+</ecore:EPackage>

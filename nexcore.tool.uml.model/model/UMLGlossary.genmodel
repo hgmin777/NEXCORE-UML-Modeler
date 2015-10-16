@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/nexcore.tool.uml.model/src/java"
+    editDirectory="/nexcore.tool.uml.model/src/java" editorDirectory="/nexcore.tool.uml.glossary/src/java"
+    modelPluginID="nexcore.tool.uml.model" modelName="UMLGlossary" editPluginClass="nexcore.tool.uml.model.umlglossary.provider.UMLGlossaryEditPlugin"
+    editorPluginClass="nexcore.tool.uml.glossary.presentation.UMLGlossaryEditorPlugin"
+    testSuiteClass="nexcore.tool.uml.model.umlglossary.tests.UMLGlossaryAllTests"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    editorPluginID="nexcore.tool.uml.glossary" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore">
+  <foreignModel>UMLGlossary.ecore</foreignModel>
+  <genPackages prefix="UMLGlossary" basePackage="nexcore.tool.uml.model" disposableProviderFactory="true"
+      ecorePackage="UMLGlossary.ecore#/">
+    <genClasses ecoreClass="UMLGlossary.ecore#//Word">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLGlossary.ecore#//Word/section"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLGlossary.ecore#//Word/koreanName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLGlossary.ecore#//Word/englishFullName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLGlossary.ecore#//Word/abbreviation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLGlossary.ecore#//Word/description"/>
+    </genClasses>
+    <genClasses ecoreClass="UMLGlossary.ecore#//Glossary">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLGlossary.ecore#//Glossary/words"/>
+      <genOperations ecoreOperation="UMLGlossary.ecore#//Glossary/add">
+        <genParameters ecoreParameter="UMLGlossary.ecore#//Glossary/add/data"/>
+      </genOperations>
+      <genOperations ecoreOperation="UMLGlossary.ecore#//Glossary/remove">
+        <genParameters ecoreParameter="UMLGlossary.ecore#//Glossary/remove/data"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false" ecoreClass="UMLGlossary.ecore#//ModelElement">
+      <genOperations ecoreOperation="UMLGlossary.ecore#//ModelElement/addEAnnotation">
+        <genParameters ecoreParameter="UMLGlossary.ecore#//ModelElement/addEAnnotation/source"/>
+      </genOperations>
+      <genOperations ecoreOperation="UMLGlossary.ecore#//ModelElement/addEAnnotationDetail">
+        <genParameters ecoreParameter="UMLGlossary.ecore#//ModelElement/addEAnnotationDetail/eAnnotation"/>
+        <genParameters ecoreParameter="UMLGlossary.ecore#//ModelElement/addEAnnotationDetail/key"/>
+        <genParameters ecoreParameter="UMLGlossary.ecore#//ModelElement/addEAnnotationDetail/value"/>
+      </genOperations>
+      <genOperations ecoreOperation="UMLGlossary.ecore#//ModelElement/getEAnnotationDetail">
+        <genParameters ecoreParameter="UMLGlossary.ecore#//ModelElement/getEAnnotationDetail/eAnnotation"/>
+        <genParameters ecoreParameter="UMLGlossary.ecore#//ModelElement/getEAnnotationDetail/key"/>
+      </genOperations>
+      <genOperations ecoreOperation="UMLGlossary.ecore#//ModelElement/setAnnotationDetail">
+        <genParameters ecoreParameter="UMLGlossary.ecore#//ModelElement/setAnnotationDetail/eAnnotation"/>
+        <genParameters ecoreParameter="UMLGlossary.ecore#//ModelElement/setAnnotationDetail/key"/>
+        <genParameters ecoreParameter="UMLGlossary.ecore#//ModelElement/setAnnotationDetail/value"/>
+      </genOperations>
+      <genOperations ecoreOperation="UMLGlossary.ecore#//ModelElement/removeEAnnotationDetail">
+        <genParameters ecoreParameter="UMLGlossary.ecore#//ModelElement/removeEAnnotationDetail/eAnnotation"/>
+        <genParameters ecoreParameter="UMLGlossary.ecore#//ModelElement/removeEAnnotationDetail/key"/>
+      </genOperations>
+      <genOperations ecoreOperation="UMLGlossary.ecore#//ModelElement/getEAnnotation">
+        <genParameters ecoreParameter="UMLGlossary.ecore#//ModelElement/getEAnnotation/source"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

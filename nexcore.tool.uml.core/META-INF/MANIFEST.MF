@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: nexcore.tool.uml.core;singleton:=true
+Bundle-Version: 2.1.0.qualifier
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: nexcore.tool.uml.core,
+ nexcore.tool.uml.core.exception,
+ nexcore.tool.uml.core.log;uses:="org.apache.log4j",
+ nexcore.tool.uml.core.message,
+ nexcore.tool.uml.core.regexp,
+ nexcore.tool.uml.core.util
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.4.0",
+ org.junit,
+ org.eclipse.core.resources;bundle-version="3.6.0",
+ nexcore.tool.uml.connector;bundle-version="1.0.0";visibility:=reexport,
+ org.eclipse.uml2.uml;bundle-version="3.1.2",
+ org.eclipse.emf.workspace;bundle-version="1.4.0",
+ org.eclipse.jface;bundle-version="3.6.1"
+Bundle-Vendor: SK Holdings
+Bundle-ClassPath: lib/log4j-1.2.15.jar,
+ .,
+ lib/dom4j-1.6.1.jar
+Bundle-Localization: plugin

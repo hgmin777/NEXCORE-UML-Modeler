@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Word-Schema>
+	<ModelInfo>
+	<!-- 기본구성 -->
+	<ProjectName></ProjectName>
+	<Date></Date>
+	<Author></Author>
+	<SystemName></SystemName>
+	<ModelName></ModelName>
+	</ModelInfo>
+	<!--배열형 팩키지정보 -->
+	<PackageOverview>
+		<!-- 팩키지 인덱스 정보와 동일 -->
+	</PackageOverview>
+	<!-- 배열형 액터정보  -->
+	<AcorOverview>
+		<UsecaseDiagramList>
+			<Name />
+			<Image />
+		</UsecaseDiagramList>
+		<ActorList>
+			<Name />
+			<QualifiedName />
+			<Document />
+		</ActorList>
+		<ActorTableList>
+			<!-- List와 동일한 구조 -->
+		</ActorTableList>
+	</AcorOverview>
+	<!-- 배열형 유스케이스 정보 -->
+	<UsecaseOverview>
+		<UsecaseDiagramList>
+			<Name />
+			<Image />
+		</UsecaseDiagramList>
+		<UsecaseDiagramTableList>
+			<!-- List와 동일한 구조 -->
+		</UsecaseDiagramTableList>
+		<UsecaseList>
+			<Name />
+			<UsecaseID />
+			<QualifiedName />
+			<Document />
+			<RelatedActorList>
+				<Name />
+				<QualifiedName />
+				<Document />
+			</RelatedActorList>
+			<RelatedActorTableList>
+				<!-- List와 동일한 구조 -->
+			</RelatedActorTableList>
+			<RequirementList>
+				<Name />
+			</RequirementList>
+			<RequirementTableList>
+				<!-- List와 동일한 구조 -->
+			</RequirementTableList>
+		</UsecaseList>
+		<UsecaseTableList>
+			<!-- List와 동일한 구조 -->
+		</UsecaseTableList>
+	</UsecaseOverview>
+	<!-- 배열형 유스케이스실체화정보 -->
+	<UsecaseRealizationList>
+		<ClassDiagramList>
+			<Name />
+			<Image />
+		</ClassDiagramList>
+		<ClassList>
+			<!-- 클래스 리스트와 동일 -->
+		</ClassList>
+		<ClassTableList>
+			<!-- List와 동일한 구조 -->
+		</ClassTableList>
+		<SequenceDiagramList>
+			<Name />
+			<Image />
+		</SequenceDiagramList>
+	</UsecaseRealizationList>
+	<!-- 배열형 컴포넌트 정보 -->
+	<ComponentList>
+		<UsecaseRealizationList>
+			<!-- 유스케이스 리얼라이제인션과 동일 -->
+		</UsecaseRealizationList>
+	</ComponentList>
+	<!-- 배열형 클래스 정보 -->
+	<ClassList>
+		<Visibility />
+		<Name />
+		<QualifiedName />
+		<Document />
+		<IsAbstract />
+		<StereotypeList>
+			<Name />
+			<ToString />
+		</StereotypeList>
+		<PropertyList>
+			<Visibility />
+			<Name />
+			<Type />
+			<DefaultValue />
+			<MultiPlicity />
+			<IsStatic />
+			<Document />
+		</PropertyList>
+		<PropertyTableList>
+			<!-- List와 동일한 구조 -->
+		</PropertyTableList>
+		<OperationList>
+			<Visibility />
+			<Name />
+			<IsAbstract />
+			<IsStatic />
+			<ReturnType />
+			<Document />
+			<ParameterList>
+				<Parameter>
+					<Name />
+					<DefaultValue />
+					<Type />
+					<Document />
+				</Parameter>
+			</ParameterList>
+		</OperationList>
+		<OperationTableList>
+			<!-- List와 동일한 구조 -->
+		</OperationTableList>
+	</ClassList>
+	<!-- 계층적 정보 -->
+	<PackageIndexList>
+		<Package>
+			<Name />
+			<QualifiedName />
+			<Document />
+		</Package>
+		<PackageTableList>
+			<!-- List와 동일한 구조 -->
+		</PackageTableList>
+		<ClassDiagramList>
+			<Name />
+			<Image />
+		</ClassDiagramList>
+		<ClassList>
+			<!-- 클래스 리스트와 동일 -->
+		</ClassList>
+		<ClassTableList>
+			<!-- List와 동일한 구조 -->
+		</ClassTableList>
+	</PackageIndexList>
+</Word-Schema>

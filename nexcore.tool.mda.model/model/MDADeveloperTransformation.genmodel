@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2010 SK C&amp;C Co., Ltd. All rights reserved.&#xD;&#xA;&#xD;&#xA;This software is the confidential and proprietary information of SK C&amp;C.&#xD;&#xA;You shall not disclose such confidential information and shall use it&#xD;&#xA;only in accordance with the terms of the license agreement you entered into&#xD;&#xA;with SK C&amp;C."
+    modelDirectory="/nexcore.tool.mda.model/src/java" editDirectory="/nexcore.tool.mda.model/src/java"
+    editorDirectory="/nexcore.tool.mda.model/src/java" modelPluginID="nexcore.tool.mda.model"
+    modelName="MDADeveloperTransformation" editPluginClass="nexcore.tool.mda.model.developer.transformation.provider.MDADeveloperTransformationEditPlugin"
+    editorPluginClass="nexcore.tool.mda.model.developer.transformation.presentation.MDADeveloperTransformationEditorPlugin"
+    testsDirectory="/nexcore.tool.mda.model/src/test" testSuiteClass="nexcore.tool.mda.model.developer.transformation.tests.MDADeveloperTransformationAllTests"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" language="">
+  <foreignModel>MDADeveloperTransformation.ecore</foreignModel>
+  <genPackages prefix="Transformation" basePackage="nexcore.tool.mda.model.developer"
+      resource="XML" disposableProviderFactory="true" multipleEditorPages="false"
+      contentTypeIdentifier="" fileExtensions="dvt" ecorePackage="MDADeveloperTransformation.ecore#/">
+    <genClasses ecoreClass="MDADeveloperTransformation.ecore#//MDADevRuleSet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//MDADevRuleSet/profileLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADeveloperTransformation.ecore#//MDADevRuleSet/classRule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADeveloperTransformation.ecore#//MDADevRuleSet/operationRule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//MDADevRuleSet/externalTemplate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//MDADevRuleSet/templateType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//MDADevRuleSet/targetProjectLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//MDADevRuleSet/defaultTargetSourceFolder"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//MDADevRuleSet/defaultFileExtension"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//MDADevRuleSet/templatePluginId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//MDADevRuleSet/templatePluginPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//MDADevRuleSet/templateName"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADeveloperTransformation.ecore#//ClassRule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//ClassRule/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//ClassRule/stereotype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//ClassRule/generateGetterSetter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//ClassRule/extension"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//ClassRule/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//ClassRule/targetFolder"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//ClassRule/prefix"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//ClassRule/postfix"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//ClassRule/template"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADeveloperTransformation.ecore#//OperationRule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//OperationRule/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//OperationRule/stereotype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//OperationRule/template"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//OperationRule/prefix"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//OperationRule/postfix"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADeveloperTransformation.ecore#//OperationRule/version"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

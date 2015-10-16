@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2010 SK C&amp;C Co., Ltd. All rights reserved.&#xD;&#xA;&#xD;&#xA;This software is the confidential and proprietary information of SK C&amp;C.&#xD;&#xA;You shall not disclose such confidential information and shall use it&#xD;&#xA;only in accordance with the terms of the license agreement you entered into&#xD;&#xA;with SK C&amp;C."
+    modelDirectory="/nexcore.tool.mda.model/src/java" editDirectory="/nexcore.tool.mda.model/src/java"
+    editorDirectory="/nexcore.tool.mda.model/src/java" modelPluginID="nexcore.tool.mda.model"
+    modelName="MDADesignerTransformation" editPluginClass="nexcore.tool.mda.model.designer.transformation.provider.MDADesignerTransformationEditPlugin"
+    editorPluginClass="nexcore.tool.mda.model.designer.transformation.presentation.MDADesignerTransformationEditorPlugin"
+    testsDirectory="/nexcore.tool.mda.model/src/test" testSuiteClass="nexcore.tool.mda.model.designer.transformation.tests.MDADesignerTransformationAllTests"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore">
+  <foreignModel>MDADesignerTransformation.ecore</foreignModel>
+  <genPackages prefix="Transformation" basePackage="nexcore.tool.mda.model.designer"
+      resource="XML" disposableProviderFactory="true" multipleEditorPages="false"
+      fileExtensions="dst" ecorePackage="MDADesignerTransformation.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MDADesignerTransformation.ecore#//TargetCreationType">
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//TargetCreationType/self"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//TargetCreationType/derived"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MDADesignerTransformation.ecore#//LocationKeywordType">
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//LocationKeywordType/none"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//LocationKeywordType/base"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//LocationKeywordType/self"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MDADesignerTransformation.ecore#//TargetType">
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//TargetType/None"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//TargetType/Component"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//TargetType/Interface"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//TargetType/Class"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MDADesignerTransformation.ecore#//NameKeywordType">
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//NameKeywordType/base"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//NameKeywordType/self"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//NameKeywordType/operation"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MDADesignerTransformation.ecore#//CapitalizationType">
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//CapitalizationType/none"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//CapitalizationType/first"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//CapitalizationType/all"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MDADesignerTransformation.ecore#//ApplicationType">
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//ApplicationType/merging"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//ApplicationType/each"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MDADesignerTransformation.ecore#//OperationApplicationType">
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//OperationApplicationType/none"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//OperationApplicationType/same_type"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//OperationApplicationType/user_defined"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MDADesignerTransformation.ecore#//ExtensionType">
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//ExtensionType/extends"/>
+      <genEnumLiterals ecoreEnumLiteral="MDADesignerTransformation.ecore#//ExtensionType/implements"/>
+    </genEnums>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//RuleSet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//RuleSet/structureRules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//RuleSet/behaviorRules"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//RuleSet/sourceModelLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//RuleSet/sourceProfileLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//RuleSet/targetModelLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//RuleSet/targetProfileLocation"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//SourceStructureTransformationData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//SourceStructureTransformationData/sourceType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//SourceStructureTransformationData/sourceLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//SourceStructureTransformationData/targetStructureTransformationDataSet"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//SourceType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//SourceType/sourceName"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//TargetStructureTransformationData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//TargetStructureTransformationData/dataName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//TargetStructureTransformationData/targetCreationType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//TargetStructureTransformationData/targetLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//TargetStructureTransformationData/targetApplicableStereotype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//TargetStructureTransformationData/targetType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//TargetStructureTransformationData/parentType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//TargetStructureTransformationData/targetName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//TargetStructureTransformationData/applicationType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//TargetStructureTransformationData/propertyCreation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//TargetStructureTransformationData/propertyApplicableStereotype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//TargetStructureTransformationData/operationCreation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//TargetStructureTransformationData/operationApplicableStereotype"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//DataNameType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//DataNameType/dataName"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//LocationType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//LocationType/location"/>
+      <genOperations ecoreOperation="MDADesignerTransformation.ecore#//LocationType/toString"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//LocationSegment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//LocationSegment/sequence"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//LocationSegment/locationName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//LocationSegment/locationKeyword"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//NameType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//NameType/prefix"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//NameType/namePart"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//NameType/postfix"/>
+      <genOperations ecoreOperation="MDADesignerTransformation.ecore#//NameType/toString"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//NamePartType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//NamePartType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//NamePartType/capitalization"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//BehaviorTransformationData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//BehaviorTransformationData/sourceRelation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//BehaviorTransformationData/remark"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//BehaviorTransformationData/self"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//BehaviorTransformationData/behaviorTransformationDetailDataSet"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//SourceRelationType">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//SourceRelationType/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//SourceRelationType/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//SourceRelationType/selfRelation"/>
+      <genOperations ecoreOperation="MDADesignerTransformation.ecore#//SourceRelationType/toString"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//BehaviorTransformationDetailData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//BehaviorTransformationDetailData/sequence"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//BehaviorTransformationDetailData/targetRelation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//BehaviorTransformationDetailData/operation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//BehaviorTransformationDetailData/operationApplicableStereotype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//BehaviorTransformationDetailData/message"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//TargetRelationType">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//TargetRelationType/source"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//TargetRelationType/target"/>
+      <genOperations ecoreOperation="MDADesignerTransformation.ecore#//TargetRelationType/toString"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//OperationType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//OperationType/operationApplicationType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDADesignerTransformation.ecore#//OperationType/assignableOperationName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//OperationType/userDefinedOperationName"/>
+      <genOperations ecoreOperation="MDADesignerTransformation.ecore#//OperationType/toString"/>
+    </genClasses>
+    <genClasses ecoreClass="MDADesignerTransformation.ecore#//ParentType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//ParentType/typeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDADesignerTransformation.ecore#//ParentType/extensionType"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

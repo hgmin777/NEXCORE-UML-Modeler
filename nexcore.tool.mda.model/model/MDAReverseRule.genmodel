@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2012 SK C&amp;C Co., Ltd. All rights reserved. &#xD;&#xA;&#xD;&#xA;This software is the confidential and proprietary information of SK C&amp;C. &#xD;&#xA;You shall not disclose such confidential information and shall use it &#xD;&#xA;only in accordance with the terms of the license agreement you entered into &#xD;&#xA;with SK C&amp;C."
+    modelDirectory="/nexcore.tool.mda.model/src/java" editDirectory="/nexcore.tool.mda.model/src/java"
+    editorDirectory="/nexcore.tool.mda.model/src/java" modelPluginID="nexcore.tool.mda.model"
+    modelName="MDAReverseRule" editPluginClass="nexcore.tool.mda.model.reverseTransformation.provider.MDAReverseRuleEditPlugin"
+    editorPluginClass="nexcore.tool.mda.model.reverseTransformation.presentation.MDAReverseRuleEditorPlugin"
+    testsDirectory="/nexcore.tool.mda.model/src/test" testSuiteClass="nexcore.tool.mda.model.reverseTransformation.tests.MDAReverseRuleAllTests"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0">
+  <foreignModel>MDAReverseRule.ecore</foreignModel>
+  <genPackages prefix="ReverseTransformation" basePackage="nexcore.tool.mda.model.developer"
+      disposableProviderFactory="true" fileExtensions="dvr" ecorePackage="MDAReverseRule.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="MDAReverseRule.ecore#//SourceProjectType">
+      <genEnumLiterals ecoreEnumLiteral="MDAReverseRule.ecore#//SourceProjectType/Java"/>
+      <genEnumLiterals ecoreEnumLiteral="MDAReverseRule.ecore#//SourceProjectType/EGOV"/>
+      <genEnumLiterals ecoreEnumLiteral="MDAReverseRule.ecore#//SourceProjectType/NEXCOREJ2EE"/>
+      <genEnumLiterals ecoreEnumLiteral="MDAReverseRule.ecore#//SourceProjectType/NEXCOREC"/>
+    </genEnums>
+    <genClasses ecoreClass="MDAReverseRule.ecore#//MDAReverseRuleSet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//MDAReverseRuleSet/sourceProjectType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//MDAReverseRuleSet/sourceLanguage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//MDAReverseRuleSet/sourceProjects"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//MDAReverseRuleSet/targetModelURI"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//MDAReverseRuleSet/mergeType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//MDAReverseRuleSet/referenceModelChange"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//MDAReverseRuleSet/profileLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDAReverseRule.ecore#//MDAReverseRuleSet/classRules"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//MDAReverseRuleSet/createDiagramYN"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MDAReverseRule.ecore#//MDAReverseRuleSet/classDiagramRule"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MDAReverseRule.ecore#//MDAReverseRuleSet/sequenceDiagramRule"/>
+    </genClasses>
+    <genClasses ecoreClass="MDAReverseRule.ecore#//ClassRule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//ClassRule/packageName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//ClassRule/generateGetterSetter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//ClassRule/generateConstructor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//ClassRule/generateDestructor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDAReverseRule.ecore#//ClassRule/operationRules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MDAReverseRule.ecore#//ClassRule/attributeRules"/>
+    </genClasses>
+    <genClasses ecoreClass="MDAReverseRule.ecore#//DiagramRule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//DiagramRule/basePackage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//DiagramRule/packageDepth"/>
+    </genClasses>
+    <genClasses ecoreClass="MDAReverseRule.ecore#//ClassDiagramRule"/>
+    <genClasses ecoreClass="MDAReverseRule.ecore#//ElementRule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//ElementRule/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//ElementRule/prefix"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//ElementRule/postfix"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//ElementRule/createYN"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//ElementRule/stereotype"/>
+    </genClasses>
+    <genClasses ecoreClass="MDAReverseRule.ecore#//SequenceDiagramRule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//SequenceDiagramRule/createVOPCYN"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MDAReverseRule.ecore#//SequenceDiagramRule/messageCallDepth"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

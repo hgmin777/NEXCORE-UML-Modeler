@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/nexcore.tool.uml.feature_2.1.0.qualifier.jar" id="nexcore.tool.uml.feature" version="2.1.0.qualifier">
+      <category name="nexcore.tool.uml"/>
+   </feature>
+   <category-def name="nexcore.tool.uml" label="NEXCORE UML Modeler"/>
+</site>

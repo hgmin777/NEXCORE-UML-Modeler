@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="nexcore.tool.uml.feature"
+      label="NEXCORE UML Modeler"
+      version="2.1.0.qualifier"
+      provider-name="SK Holdings">
+
+   <description url="http://nexcore.skcc.com/">
+      NEXCORE UML Modeler
+   </description>
+
+   <copyright url="http://nexcore.skcc.com/legal/copyright.txt">
+      Copyright (c) 2012 SK C&amp;C Co., Ltd. All rights reserved. 
+This software is the confidential and proprietary information
+of SK C&amp;C. 
+You shall not disclose such confidential information and shall
+use it 
+only in accordance with the terms of the license agreement you
+entered into with SK C&amp;C.
+   </copyright>
+
+   <license url="http://nexcore.skcc.com/legal/license.txt">
+      이 제품은 다음과 같은 OSS와 함께 배포될 수 있습니다. SK Holdings와 NEXCORE는 모든 OSS의 저작권을 존중하며 각각의 라이선스를 준수하고자 노력합니다.
+   </license>
+
+   <url>
+      <update label="NEXCORE UML Modeler" url="http://nexcore.skcc.com/alcinous/update/alm/uml/"/>
+      <discovery label="NEXCORE ALM Suite Common Site" url="http://nexcore.skcc.com/alcinous/update/alm/common/"/>
+   </url>
+
+   <requires>
+      <import feature="org.eclipse.wst.common_core.feature" version="0.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.wst.common_ui.feature" version="0.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.wst.xml_core.feature" version="0.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.wst.xml_ui.feature" version="0.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="nexcore.tool.uml.core"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.tool.uml.manager"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.tool.uml.model"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.tool.uml.ui.analysis"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.tool.uml.ui.core"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.tool.uml.ui.preferences"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.tool.uml.ui.project"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.tool.uml.ui.property"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.tool.uml.ui.realization"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.tool.uml.ui.search"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.tool.uml.connector"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"/>
+
+   <plugin
+         id="nexcore.tool.mdd.core"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.tool.mda.model"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.alm.common"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.alm.common.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="nexcore.tool.uml.help"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

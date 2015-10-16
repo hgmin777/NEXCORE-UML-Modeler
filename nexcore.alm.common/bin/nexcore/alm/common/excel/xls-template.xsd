@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nexcore.skcc.com/xls-config" xmlns="http://nexcore.skcc.com/xls-config">
+	<xs:element name="number-format">
+		<xs:complexType>
+			<xs:attribute name="type" type="xs:string" />
+			<xs:attribute name="custom" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="alignment">
+		<xs:complexType>
+			<xs:attribute name="horizontal" type="xs:string">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="general"/>
+						<xs:enumeration value="left"/>
+						<xs:enumeration value="center"/>
+						<xs:enumeration value="right"/>
+						<xs:enumeration value="filled"/>
+						<xs:enumeration value="justified"/>
+						<xs:enumeration value="center_across"/>
+						<xs:enumeration value="distributed"/>
+						<xs:enumeration value="justify_distributed"/>						
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="vertical">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="top"/>
+						<xs:enumeration value="center"/>
+						<xs:enumeration value="bottom"/>
+						<xs:enumeration value="justified"/>
+						<xs:enumeration value="distributed"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="indent" type="xs:string" />
+			<xs:attribute name="wrapped" type="xs:boolean" />
+			<xs:attribute name="shrinked" type="xs:boolean" />
+			<xs:attribute name="text-direction" type="xs:string">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="left"/>
+						<xs:enumeration value="right"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="border">
+		<xs:complexType>
+			<xs:attribute name="type" type="xs:string" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="top"/>
+						<xs:enumeration value="left"/>
+						<xs:enumeration value="bottom"/>
+						<xs:enumeration value="right"/>
+						<xs:enumeration value="diagonal_down"/>
+						<xs:enumeration value="diagonal_up"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="line" type="xs:string" />
+			<xs:attribute name="color" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="borders">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element ref="border" minOccurs="0" maxOccurs="6" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="font">
+		<xs:complexType>
+			<xs:attribute name="name" type="xs:string" />
+			<xs:attribute name="size" type="xs:string" />
+			<xs:attribute name="color" type="xs:string" />
+			<xs:attribute name="bold" type="xs:string" />
+			<xs:attribute name="italic" type="xs:string" />
+			<xs:attribute name="underline" type="xs:string" />
+			<xs:attribute name="strike-out" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="interior">
+		<xs:complexType>
+			<xs:attribute name="color" type="xs:string" />
+			<xs:attribute name="pattern" type="xs:string" />
+			<xs:attribute name="pattern-color" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="style">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="number-format" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="alignment" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="borders" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="font" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="interior" minOccurs="0" maxOccurs="1" />
+			</xs:sequence>
+			<xs:attribute name="id" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"></xs:minLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="styles">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="style" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="title" type="xs:string" />
+	<xs:element name="subject" type="xs:string" />
+	<xs:element name="author" type="xs:string" />
+	<xs:element name="manager" type="xs:string" />
+	<xs:element name="company" type="xs:string" />
+	<xs:element name="category" type="xs:string" />
+	<xs:element name="keywords" type="xs:string" />
+	<xs:element name="comments" type="xs:string" />
+	<xs:element name="document-properties">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="title" />
+				<xs:element ref="subject" />
+				<xs:element ref="author"/>
+				<xs:element ref="manager" />
+				<xs:element ref="company" />
+				<xs:element ref="category" />
+				<xs:element ref="keywords" />
+				<xs:element ref="comments" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="paper">
+		<xs:complexType>
+			<xs:attribute name="size" type="xs:string" />
+			<xs:attribute name="orientation" type="xs:string">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="landscape"/>
+						<xs:enumeration value="portrait"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="margin">
+		<xs:complexType>
+			<xs:attribute name="top" type="xs:string" />
+			<xs:attribute name="left" type="xs:string" />
+			<xs:attribute name="bottom" type="xs:string" />
+			<xs:attribute name="right" type="xs:string" />
+			<xs:attribute name="header" type="xs:string" />
+			<xs:attribute name="footer" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="page-setup">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="paper" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="margin" minOccurs="0" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="cell">
+		<xs:complexType>
+			<xs:attribute name="colspan" type="xs:string" use="optional" />
+			<xs:attribute name="style" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="column">
+		<xs:complexType>
+			<xs:attribute name="auto-fit" type="xs:string" use="optional" />
+			<xs:attribute name="width" type="xs:string" use="optional" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="row">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="cell" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="auto-fit" type="xs:string" />
+			<xs:attribute name="height" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="rows">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="cell" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="auto-fit" type="xs:string" />
+			<xs:attribute name="height" type="xs:string" />
+			<xs:attribute name="java-class" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="table">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="column" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="row" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="rows" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+	<xs:element name="category-data">
+		<xs:complexType>
+			<xs:attribute name="start-column" type="xs:string" use="required"/>
+			<xs:attribute name="start-row" type="xs:string" use="required"/>
+			<xs:attribute name="end-column" type="xs:string" use="required"/>
+			<xs:attribute name="end-row" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="value-data">
+		<xs:complexType>
+			<xs:attribute name="start-column" type="xs:string" use="required"/>
+			<xs:attribute name="start-row" type="xs:string" use="required"/>
+			<xs:attribute name="end-column" type="xs:string" use="required"/>
+			<xs:attribute name="end-row" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="chart">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="category-data" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="value-data" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="type" type="xs:string" use="optional"/>
+			<xs:attribute name="column" type="xs:string" use="optional"/>
+			<xs:attribute name="row" type="xs:string" use="optional"/>
+			<xs:attribute name="width" type="xs:string" use="optional"/>
+			<xs:attribute name="height" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="worksheet">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="page-setup" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="table" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="chart" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"></xs:minLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="workbook">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="document-properties" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="styles" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="worksheet" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

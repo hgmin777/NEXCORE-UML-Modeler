@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NEXCORE ALM Common UI
+Bundle-Vendor: SK Holdings
+Bundle-SymbolicName: nexcore.alm.common.ui;singleton:=true
+Bundle-Version: 2.1.0.qualifier
+Bundle-Activator: nexcore.alm.common.ui.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.forms;bundle-version="3.5.2",
+ nexcore.alm.common;bundle-version="2.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: nexcore.alm.common.ui,
+ nexcore.alm.common.ui.action,
+ nexcore.alm.common.ui.constant,
+ nexcore.alm.common.ui.dialog,
+ nexcore.alm.common.ui.preference,
+ nexcore.alm.common.ui.util
+Bundle-ClassPath: lib/dom4j-1.6.1.jar,
+ .

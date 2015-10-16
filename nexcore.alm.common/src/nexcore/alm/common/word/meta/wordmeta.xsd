@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by myoungki kim (ajou univ) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://skcc.com/2003/wordmeta" targetNamespace="http://skcc.com/2003/wordmeta" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xs:element name="TemplateMeta" type="TemplateMetaElt">
+	</xs:element>
+	<xs:element name="Key" type="KeyElt">
+	</xs:element>
+	<xs:element name="Class" type="ClassElt">
+	</xs:element>
+	<xs:complexType name="TemplateMetaElt">
+		<xs:sequence>
+			<xs:element ref="Key" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="KeyElt">
+		<xs:sequence>
+			<xs:element ref="Class" minOccurs="1">
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="name" type="type"/>
+		<xs:attribute name="isdeep" type="deep"/>
+	</xs:complexType>
+	<xs:complexType name="ClassElt">
+		<xs:sequence>
+			<xs:element ref="Key" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="name" type="type"/>
+		<xs:attribute name="field" type="type"/>
+	</xs:complexType>
+
+	<xs:simpleType name="type">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="deep">
+		<xs:restriction base="xs:boolean"/>
+	</xs:simpleType>	
+</xs:schema>

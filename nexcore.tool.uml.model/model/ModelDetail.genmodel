@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/nexcore.tool.uml.model_v1.0/src/java"
+    editDirectory="/nexcore.tool.uml.model_v1.0/src/java" editorDirectory="/nexcore.tool.uml.model_v1.0/src/java"
+    modelPluginID="nexcore.tool.uml.model" modelName="ModelDetail" testsDirectory="/nexcore.tool.uml.model_v1.0/src/java"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    providerRootExtendsClass="" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore">
+  <foreignModel>ModelDetail.ecore</foreignModel>
+  <genPackages prefix="ModelDetail" basePackage="nexcore.tool.uml.model" disposableProviderFactory="true"
+      multipleEditorPages="false" fileExtensions="mdt" ecorePackage="ModelDetail.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ModelDetail.ecore#//ModelType">
+      <genEnumLiterals ecoreEnumLiteral="ModelDetail.ecore#//ModelType/General"/>
+      <genEnumLiterals ecoreEnumLiteral="ModelDetail.ecore#//ModelType/UseCase"/>
+      <genEnumLiterals ecoreEnumLiteral="ModelDetail.ecore#//ModelType/Analysis"/>
+      <genEnumLiterals ecoreEnumLiteral="ModelDetail.ecore#//ModelType/Design"/>
+    </genEnums>
+    <genClasses ecoreClass="ModelDetail.ecore#//ModelDetail">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ModelDetail.ecore#//ModelDetail/ModelType"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

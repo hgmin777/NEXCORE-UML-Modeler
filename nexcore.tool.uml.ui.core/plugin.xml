@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="nexcore.tool.uml.ui.core.editor.extension" name="UML Editor Extension" schema="schema/uml.editor.exsd"/>
+   <extension-point id="nexcore.tool.uml.command.execution.unit" name="Execution Unit" schema="schema/nexcore.tool.uml.command.execution.unit.exsd"/>
+
+   <extension
+         point="org.eclipse.ui.editors">
+   </extension>
+   <extension
+         point="nexcore.tool.precedingInitializer">
+      <precedingInitializer
+            id="nexcore.tool.uml.ui.core.precedingInitializer"
+            label="%nexcore.tool.uml.ui.core.precedingInitializer.label"
+            targetClass="nexcore.tool.uml.ui.core.registry.UMLUiCorePrecedingInitializer">
+      </precedingInitializer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="org.eclipse.ui.edit.text.delete.line"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+D">
+      </key>
+   </extension>
+	<extension point="org.eclipse.ui.startup">
+		<startup class="nexcore.tool.uml.ui.core.UMLStartupCore"/>
+	</extension>
+	<!--
+ <extension
+       point="nexcore.platform.foundation.core.ui.resourceHandler">
+    <resourceHandler
+          handlerClass="nexcore.tool.uml.ui.core.handler.NCPResourceHandler"
+          handlerId="nexcore.tool.uml.ui.core.resourceHandler1"
+          type="EDIT">
+    </resourceHandler>
+ </extension>
+ -->
+ <extension
+       point="org.eclipse.ui.navigator.linkHelper">
+    <linkHelper
+          class="nexcore.tool.uml.ui.core.navigator.LinkHelper"
+          id="nexcore.tool.uml.ui.core.linkHelper">
+          <editorInputEnablement>
+             <or>
+                <instanceof
+                      value="nexcore.tool.uml.ui.core.editor.input.UMLEditorInput">
+                </instanceof>
+                <instanceof
+                      value="nexcore.tool.uml.ui.core.diagram.editor.DiagramEditorInput">
+                </instanceof>
+             </or>
+             <not>
+                <instanceof
+                      value="nexcore.tool.uml.model.umldiagram.AbstractView">
+                </instanceof>
+             </not>
+          </editorInputEnablement>
+          <selectionEnablement>
+             <or>
+                <instanceof
+                      value="nexcore.tool.uml.ui.core.project.ITreeNode">
+                </instanceof>
+                <instanceof
+                      value="org.eclipse.core.resources.IFile">
+                </instanceof>
+             </or>
+          </selectionEnablement>
+    </linkHelper>
+ </extension>
+</plugin>

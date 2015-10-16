@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="nexcore.tool.precedingInitializer" name="Preceding Initializer" schema="schema/nexcore.tool.precedingInitializer.exsd"/>
+
+   <extension
+         point="org.eclipse.emf.transaction.editingDomains">
+      <editingDomain
+            factory="nexcore.tool.uml.manager.transaction.UMLEditingDomainFactory"
+            id="nexcore.tool.uml.manager.editingDomain">
+      </editingDomain>
+   </extension>
+
+   <extension
+         point="org.eclipse.emf.transaction.listeners">
+      <listener
+            class="nexcore.tool.uml.manager.transaction.UMLResourceSetListener">
+         <editingDomain
+               id="nexcore.tool.uml.manager.editingDomain">
+         </editingDomain>
+      </listener>
+   </extension>
+   <extension
+         point="nexcore.tool.mdd.core.domain.model.handler">
+      <domainModelHandler
+            id="nexcore.tool.uml.manager.domainModelHandler"
+            implementInterface="nexcore.tool.uml.manager.handler.UMLModelerDomainModelHandler"
+            label="Domain Model Handler for UML Modeler">
+      </domainModelHandler>
+   </extension>
+
+   <extension
+         point="nexcore.tool.mdd.core.semantic.model.handler">
+      <semanticModelHandler
+            id="nexcore.tool.uml.manager.semanticModelHandler"
+            implementInterface="nexcore.tool.uml.manager.handler.SemanticModelHandler"
+            label="Semantic Model Handler">
+      </semanticModelHandler>
+   </extension>
+   <extension
+         point="nexcore.tool.mdd.core.notation.model.handler">
+      <notationModelHandler
+            id="nexcore.tool.uml.manager.notationModelHandler"
+            implementInterface="nexcore.tool.uml.manager.handler.UMLModelerNotationModelHandler"
+            label="Notation Model Handler for UML Modeler">
+      </notationModelHandler>
+   </extension>
+</plugin>

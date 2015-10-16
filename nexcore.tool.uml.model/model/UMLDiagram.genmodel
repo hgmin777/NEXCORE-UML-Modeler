@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/nexcore.tool.uml.model/src/java"
+    editDirectory="/nexcore.tool.uml.model/src/java" editorDirectory="/nexcore.tool.uml.model/src/java"
+    modelPluginID="nexcore.tool.uml.model" redirection="" modelName="UMLDiagram" testsDirectory="/nexcore.tool.uml.model/src/java"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    colorProviders="true" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.eclipse.uml2.uml/model/UML.genmodel#//uml">
+  <foreignModel>UMLDiagram.ecore</foreignModel>
+  <genPackages prefix="UMLDiagram" basePackage="nexcore.tool.uml.model" resource="XMI"
+      disposableProviderFactory="true" multipleEditorPages="false" fileExtensions="umx"
+      ecorePackage="UMLDiagram.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UMLDiagram.ecore#//LabelType">
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//LabelType/Label"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//LabelType/SourceRole"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//LabelType/TargetRole"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//LabelType/SourceMultiplex"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//LabelType/TargetMultiplex"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//LabelType/Stereotype"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//LabelType/Compartment"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UMLDiagram.ecore#//DiagramType">
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//DiagramType/UseCaseDiagram"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//DiagramType/ClassDiagram"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//DiagramType/SequenceDiagram"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//DiagramType/ComponentDiagram"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//DiagramType/ActivityDiagram"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//DiagramType/StateMachineDiagram"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//DiagramType/DeploymentDiagram"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//DiagramType/CompositeStructureDiagram"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//DiagramType/CommunicationDiagram"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//DiagramType/FreeFormDiagram"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UMLDiagram.ecore#//NodeType">
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Note"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Text"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Activity"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ActivityPartition"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/StructuredActivityNode"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ComponentStructureCompartment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/CombinedFragment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/AlternativeCombinedFragment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/BreakCombinedFragment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/LoopCombinedFragment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/SequenceCombinedFragment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/StrictCombinedFragment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ParallelCombinedFragment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/CriticalCombinedFragment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/NegativeCombinedFragment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/AssertCombinedFragment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/IgnoreCombinedFragment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ConsiderCombinedFragment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/OptionCombinedFragment"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/CombinedFragmentName"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/InteractionOperand"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Guard"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/OptionIf"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/AlternativeSwitch"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/AlternativeIfElse"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/LoopWhile"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/LoopFor"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Region"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/State"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/CompositeStructure"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/AcceptEventAction"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ActivityFinalNode"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ActivityParameterNode"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/CallBehaviorAction"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/CallOperationAction"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/CentralBufferNode"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/DataStoreNode"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/DecisionNode"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ExpansionNode"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/FlowFinalNode"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ForkNode"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/InitialNode"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/InputPin"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/JoinNode"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/MergeNode"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/OpaqueAction"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/OutputPin"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/SendSignalAction"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ValuePin"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Artifact"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Class"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Collaboration"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/DataType"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Enumeration"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Interface"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Package"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Signal"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Component"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/DestructionEvent"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/InteractionUse"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Lifeline"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Message"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/SynchronousMessage"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ASynchronousMessage"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/CreateMessage"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/DestroyMessage"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Pseudostate"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ChoicePoint"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/JunctionPoint"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/DeepHistory"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ShallowHistory"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Join"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Fork"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/EntryPoint"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ExitPoint"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Terminate"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/FinalState"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/StateInvariant"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Transition"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/CollaborationUse"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Property"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Port"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Actor"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ElementImport"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Generalization"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/UseCase"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Line"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/LifeLineBehavior"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Lolly"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/HalfLolly"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Name"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Stereotype"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Attributes"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Attribute"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Operations"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/Operation"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ProvidedInterfaces"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ProvidedInterface"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/RequiredInterfaces"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/RequiredInterface"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/RequiredInterfaceOperation"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/ProvidedInterfaceOperation"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/EnumerationLiterals"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//NodeType/EnumerationLiteral"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UMLDiagram.ecore#//RelationType">
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/Attachement"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/Association"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/Aggregation"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/Composition"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/DirectedAggregation"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/DirectedAssociation"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/DirectedComposition"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/Connector"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/ControlFlow"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/Dependency"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/Abstraction"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/Extend"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/Include"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/PackageImport"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/PackageMerge"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/Usage"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/Generalization"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/ObjectFlow"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/Realization"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/ComponentRealization"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/InterfaceRealization"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/Message"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/SynchronousMessage"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/ASynchronousMessage"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/CreateMessage"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/DestroyMessage"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RelationType/ReplyMessage"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UMLDiagram.ecore#//RegionEnumType">
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RegionEnumType/Attribute"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RegionEnumType/Operation"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RegionEnumType/RequiredInterface"/>
+      <genEnumLiterals ecoreEnumLiteral="UMLDiagram.ecore#//RegionEnumType/ProvidedInterface"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="UMLDiagram.ecore#//ConnectionLabelTypeObject"/>
+    <genDataTypes ecoreDataType="UMLDiagram.ecore#//DiagramTypeObject"/>
+    <genDataTypes ecoreDataType="UMLDiagram.ecore#//NodeTypeObject"/>
+    <genDataTypes ecoreDataType="UMLDiagram.ecore#//RelationTypeObject"/>
+    <genClasses image="false" ecoreClass="UMLDiagram.ecore#//AbstractConnection">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//AbstractConnection/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference UMLDiagram.ecore#//AbstractConnection/sourceAnchor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//AbstractConnection/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference UMLDiagram.ecore#//AbstractConnection/targetAnchor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//AbstractConnection/bendPointList"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//AbstractConnection/labels"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractConnection/relationType"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="UMLDiagram.ecore#//AbstractNode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractNode/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractNode/height"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//AbstractNode/incomingConnectionList"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//AbstractNode/sourceAnchorMap"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//AbstractNode/outgoingConnectionList"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//AbstractNode/targetAnchorMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractNode/isContainer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractNode/nodeType"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="UMLDiagram.ecore#//AbstractView">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractView/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractView/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractView/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//AbstractView/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//AbstractView/umlModel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractView/fillColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractView/lineColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractView/fontColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractView/fontName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractView/fontStyle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractView/fontSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractView/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//AbstractView/y"/>
+    </genClasses>
+    <genClasses ecoreClass="UMLDiagram.ecore#//Attachement"/>
+    <genClasses ecoreClass="UMLDiagram.ecore#//BendPoint">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//BendPoint/firstPosition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//BendPoint/secondPosition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//BendPoint/weight"/>
+    </genClasses>
+    <genClasses ecoreClass="UMLDiagram.ecore#//ContainerNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//ContainerNode/nodeList"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//ContainerNode/connectionList"/>
+    </genClasses>
+    <genClasses ecoreClass="UMLDiagram.ecore#//Diagram">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//Diagram/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//Diagram/nodeList"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//Diagram/connectionList"/>
+    </genClasses>
+    <genClasses ecoreClass="UMLDiagram.ecore#//Dimension">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//Dimension/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//Dimension/height"/>
+    </genClasses>
+    <genClasses ecoreClass="UMLDiagram.ecore#//Map">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//Map/key"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//Map/value"/>
+    </genClasses>
+    <genClasses ecoreClass="UMLDiagram.ecore#//NotationNode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//NotationNode/Regions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//NotationNode/compartmentList"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//NotationNode/labels"/>
+    </genClasses>
+    <genClasses ecoreClass="UMLDiagram.ecore#//Relation"/>
+    <genClasses ecoreClass="UMLDiagram.ecore#//LifeLineNode">
+      <genFeatures property="None" children="true" createChild="true" propertyCategory=""
+          propertyDescription="" ecoreFeature="ecore:EReference UMLDiagram.ecore#//LifeLineNode/line"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//LifeLineNode/behaviorList"/>
+    </genClasses>
+    <genClasses ecoreClass="UMLDiagram.ecore#//Line"/>
+    <genClasses ecoreClass="UMLDiagram.ecore#//RegionType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//RegionType/RegionKind"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//RegionType/RegionSize"/>
+    </genClasses>
+    <genClasses ecoreClass="UMLDiagram.ecore#//LabelNode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UMLDiagram.ecore#//LabelNode/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UMLDiagram.ecore#//LabelNode/compartmentList"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

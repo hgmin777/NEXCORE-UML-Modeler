@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="usecasedetail"
+    nsURI="http://nexcore.skcc.com/tools/uml/usecasedetail" nsPrefix="ucd">
+  <eClassifiers xsi:type="ecore:EClass" name="UseCaseDetail" eSuperTypes="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EAnnotation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="PreCondition" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="PostCondition" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="BasicFlowList" upperBound="-1"
+        eType="#//FlowObject" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="SubFlowList" upperBound="-1"
+        eType="#//FlowObject" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ExceptionFlowList" upperBound="-1"
+        eType="#//FlowObject" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FlowObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FlowId" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FlowName" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FlowOverview" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FlowDescription" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>
