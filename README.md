@@ -1,5 +1,3 @@
-#### (WIP, 현재 Open Source화를 위해 작업중입니다.)
----
 ### NEXCORE UML Modeler v2.0 (OSS version)
 
 #### 1. NEXCORE UML Modeler는? 
@@ -27,6 +25,6 @@
 
 * [Quick Guide] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/0.-Quick-Guide) 
 * [User Manual] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki)
-
+* [Dev. Guide] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/wiki_files/dev_guide.pdf)
 
 [![NEXCORE](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/wiki_files/top_nexcore.gif)](http://nexcore.skcc.com/ko/)  is a trademark of SK Holdings Co. Ltd.
