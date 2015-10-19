@@ -8,6 +8,6 @@ Require-Bundle: nexcore.tool.uml.ui.core
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
  J2SE-1.5
-Bundle-Vendor: SK Holdings
+Bundle-Vendor: SK holdings
 Export-Package: nexcore.tool.uml.ui.analysis,
  nexcore.tool.uml.ui.analysis.componentdiagram.edit.part

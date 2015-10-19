@@ -4,7 +4,7 @@ Bundle-Name: NEXCORE MDD Core Plug-in
 Bundle-SymbolicName: nexcore.tool.mdd.core;singleton:=true
 Bundle-Version: 2.1.0.qualifier
 Bundle-Activator: nexcore.tool.mdd.core.MDDCorePlugin
-Bundle-Vendor: SK Holdings
+Bundle-Vendor: SK holdings
 Require-Bundle: org.eclipse.emf.transaction,
  nexcore.tool.mda.model;visibility:=reexport,
  nexcore.tool.uml.model;visibility:=reexport

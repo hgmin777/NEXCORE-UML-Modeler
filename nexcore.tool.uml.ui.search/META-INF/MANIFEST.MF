@@ -4,7 +4,7 @@ Bundle-Name: NEXCORE UML Search Plug-in
 Bundle-SymbolicName: nexcore.tool.uml.ui.search;singleton:=true
 Bundle-Version: 2.1.0.qualifier
 Bundle-Activator: nexcore.tool.uml.ui.search.Activator
-Bundle-Vendor: SK Holdings
+Bundle-Vendor: SK holdings
 Require-Bundle: org.eclipse.ui.ide;bundle-version="3.4.2",
  org.eclipse.search;bundle-version="3.4.1",
  nexcore.tool.uml.ui.project

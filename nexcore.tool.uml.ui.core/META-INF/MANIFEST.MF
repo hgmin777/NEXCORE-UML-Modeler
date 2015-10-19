@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: NEXCORE UML UiCore Plug-in
 Bundle-SymbolicName: nexcore.tool.uml.ui.core;singleton:=true
 Bundle-Version: 2.1.0.qualifier
-Bundle-Vendor: SK Holdings
+Bundle-Vendor: SK holdings
 Require-Bundle: org.eclipse.ui.navigator;bundle-version="3.3.102",
  org.eclipse.ui.views.properties.tabbed;bundle-version="3.4.2";visibility:=reexport,
  nexcore.tool.uml.manager;visibility:=reexport,

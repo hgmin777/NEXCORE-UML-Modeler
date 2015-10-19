@@ -1,8 +1,8 @@
 /**
- * Copyright (c) 2015 SK Holdings Co., Ltd. All rights reserved.
- * This software is the confidential and proprietary information of SK Holdings.
+ * Copyright (c) 2015 SK holdings Co., Ltd. All rights reserved.
+ * This software is the confidential and proprietary information of SK holdings.
  * You shall not disclose such confidential information and shall use it only in
- * accordance with the terms of the license agreement you entered into with SK Holdings.
+ * accordance with the terms of the license agreement you entered into with SK holdings.
  * (http://www.apache.org/licenses/LICENSE-2.0)
  */
 package nexcore.tool.uml.model.rmdata;

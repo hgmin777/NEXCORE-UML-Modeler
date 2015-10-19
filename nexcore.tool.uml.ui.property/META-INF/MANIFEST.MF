@@ -11,7 +11,7 @@ Require-Bundle: nexcore.tool.uml.ui.realization,
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
  J2SE-1.5
-Bundle-Vendor: SK Holdings
+Bundle-Vendor: SK holdings
 Bundle-Localization: plugin
 Import-Package: org.eclipse.ui.internal.ide
 Bundle-ClassPath: lib/dom4j-1.6.1.jar,

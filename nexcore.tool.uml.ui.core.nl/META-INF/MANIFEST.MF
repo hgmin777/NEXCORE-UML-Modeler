@@ -3,6 +3,6 @@ Bundle-ManifestVersion: 2
 Bundle-Name: NEXCORE UML UI Core Fragment
 Bundle-SymbolicName: nexcore.tool.uml.ui.core.nl;singleton:=true
 Bundle-Version: 2.1.0.qualifier
-Bundle-Vendor: SK Holdings
+Bundle-Vendor: SK holdings
 Fragment-Host: nexcore.tool.uml.ui.core
 Bundle-RequiredExecutionEnvironment: J2SE-1.5

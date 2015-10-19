@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: NEXCORE UML Manager Plug-in
 Bundle-SymbolicName: nexcore.tool.uml.manager;singleton:=true
 Bundle-Version: 2.1.0.qualifier
-Bundle-Vendor: SK Holdings
+Bundle-Vendor: SK holdings
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: org.eclipse.emf.query;bundle-version="1.2.0";visibility:=reexport,
  org.eclipse.emf.workspace;bundle-version="1.2.3";visibility:=reexport,

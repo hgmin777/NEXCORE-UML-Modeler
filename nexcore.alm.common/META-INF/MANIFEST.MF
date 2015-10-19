@@ -9,7 +9,7 @@ Bundle-ClassPath: .,
  lib/ehcache-1.2.4.jar,
  lib/log4j-1.2.15.jar,
  lib/jdom.jar
-Bundle-Vendor: SK Holdings
+Bundle-Vendor: SK holdings
 Export-Package: net.sf.ehcache,
  net.sf.ehcache.bootstrap,
  net.sf.ehcache.config,

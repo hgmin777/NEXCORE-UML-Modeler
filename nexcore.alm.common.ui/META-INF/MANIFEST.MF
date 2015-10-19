@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: NEXCORE ALM Common UI
-Bundle-Vendor: SK Holdings
+Bundle-Vendor: SK holdings
 Bundle-SymbolicName: nexcore.alm.common.ui;singleton:=true
 Bundle-Version: 2.1.0.qualifier
 Bundle-Activator: nexcore.alm.common.ui.Activator

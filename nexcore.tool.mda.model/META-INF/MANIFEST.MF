@@ -5,7 +5,7 @@ Bundle-SymbolicName: nexcore.tool.mda.model
 Bundle-Version: 2.1.0.qualifier
 Require-Bundle: org.eclipse.emf.ecore,
  org.eclipse.emf.ecore.xmi;bundle-version="2.4.1"
-Bundle-Vendor: SK Holdings
+Bundle-Vendor: SK holdings
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
  J2SE-1.5
 Export-Package: nexcore.tool.mda.model.common,
