@@ -23,7 +23,7 @@
 
 #### 4. Guidance
 
-* [Quick Guide (Installation and Execution)] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/00.-Quick-Guide) : [Download] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/wiki_files/NEXCORE%20UML%20Modeler_Quick%20Guide.pptx)
+* [Quick Guide] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/00.-Quick-Guide) (Installation and Execution) : [Download] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/wiki_files/NEXCORE%20UML%20Modeler_Quick%20Guide.pptx)
 * [User Manual] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki)
 * [Developer Guide] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/releases/download/v2.0/NEXCORE.UML.Modeler_Developer.Guide.pptx)
 
