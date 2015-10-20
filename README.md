@@ -24,7 +24,7 @@
 #### 4. Guidance
 
 * Quick Guide (Installation and Execution) : [Link] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/00.-Quick-Guide), [Download] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/wiki_files/NEXCORE%20UML%20Modeler_Quick%20Guide.pptx)
-* User Manual [Link] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki)
-* Developer Guide [Link] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/wiki_files/NEXCORE%20UML%20Modeler_Developer%20Guide.pdf)
+* [User Manual] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki)
+* [Developer Guide] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/wiki_files/NEXCORE%20UML%20Modeler_Developer%20Guide.pdf)
 
 [![NEXCORE](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/wiki_files/top_nexcore.gif)](http://nexcore.skcc.com/ko/)  is a trademark of SK Holdings Co. Ltd.
