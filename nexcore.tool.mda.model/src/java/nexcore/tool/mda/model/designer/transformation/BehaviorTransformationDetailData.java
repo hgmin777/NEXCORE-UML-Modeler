@@ -1,10 +1,9 @@
-/*
- * Copyright (c) 2010 SK C&C Co., Ltd. All rights reserved.
- * 
- * This software is the confidential and proprietary information of SK C&C. You
- * shall not disclose such confidential information and shall use it only in
- * accordance with the terms of the license agreement you entered into with SK
- * C&C.
+/**
+ * Copyright (c) 2015 SK holdings Co., Ltd. All rights reserved.
+ * This software is the confidential and proprietary information of SK holdings.
+ * You shall not disclose such confidential information and shall use it only in
+ * accordance with the terms of the license agreement you entered into with SK holdings.
+ * (http://www.eclipse.org/legal/epl-v10.html)
  */
 
 package nexcore.tool.mda.model.designer.transformation;
@@ -46,7 +45,7 @@ public interface BehaviorTransformationDetailData extends EObject {
      * 
      * @generated
      */
-    String copyright = "Copyright (c) 2010 SK C&C Co., Ltd. All rights reserved.\r\n\r\nThis software is the confidential and proprietary information of SK C&C.\r\nYou shall not disclose such confidential information and shall use it\r\nonly in accordance with the terms of the license agreement you entered into\r\nwith SK C&C.";
+    String copyright = "";
 
     /**
      * Returns the value of the '<em><b>Sequence</b></em>' attribute. <!--

@@ -10,6 +10,15 @@ package nexcore.alm.common.ui.constant;
 
 import org.eclipse.swt.graphics.Color;
 
+/**
+ * <ul>
+ * <li>업무 그룹명 : nexcore.alm.common.ui</li>
+ * <li>서브 업무명 : nexcore.alm.common.ui.constant</li>
+ * <li>설 명 : ColorConstant</li>
+ * <li>작성일 : 2011. 11. 15.</li>
+ * <li>작성자 : 최상현</li>
+ * </ul>
+ */
 public class ColorConstant {
 
     /** 빨강 */

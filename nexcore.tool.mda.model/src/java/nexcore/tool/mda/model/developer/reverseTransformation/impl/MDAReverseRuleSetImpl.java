@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2012 SK C&C Co., Ltd. All rights reserved. 
- * 
- * This software is the confidential and proprietary information of SK C&C. 
- * You shall not disclose such confidential information and shall use it 
- * only in accordance with the terms of the license agreement you entered into 
- * with SK C&C.
+ * Copyright (c) 2015 SK holdings Co., Ltd. All rights reserved.
+ * This software is the confidential and proprietary information of SK holdings.
+ * You shall not disclose such confidential information and shall use it only in
+ * accordance with the terms of the license agreement you entered into with SK holdings.
+ * (http://www.eclipse.org/legal/epl-v10.html)
  */
+
 package nexcore.tool.mda.model.developer.reverseTransformation.impl;
 
 import java.util.Collection;
@@ -61,7 +61,7 @@ public class MDAReverseRuleSetImpl extends EObjectImpl implements MDAReverseRule
      * <!-- end-user-doc -->
      * @generated
      */
-    public static final String copyright = "Copyright (c) 2012 SK C&C Co., Ltd. All rights reserved. \r\n\r\nThis software is the confidential and proprietary information of SK C&C. \r\nYou shall not disclose such confidential information and shall use it \r\nonly in accordance with the terms of the license agreement you entered into \r\nwith SK C&C.";
+    public static final String copyright = "";
 
     /**
      * The default value of the '{@link #getSourceProjectType() <em>Source Project Type</em>}' attribute.

@@ -5,6 +5,7 @@
  * accordance with the terms of the license agreement you entered into with SK holdings.
  * (http://www.eclipse.org/legal/epl-v10.html)
  */
+
 package nexcore.tool.uml.ui.search;
 
 import nexcore.tool.uml.ui.core.UICoreConstant;

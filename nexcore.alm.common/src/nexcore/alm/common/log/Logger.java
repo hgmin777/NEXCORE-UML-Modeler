@@ -1,12 +1,10 @@
-/*
- * Copyright (c) 2006-2009 SK C&C. All rights reserved.
- * 
- * This software is the confidential and proprietary information of SK C&C. You
- * shall not disclose such Confidential Information and shall use it only in
- * accordance wiht the terms of the license agreement you entered into with SK
- * C&C.
+/**
+ * Copyright (c) 2015 SK holdings Co., Ltd. All rights reserved.
+ * This software is the confidential and proprietary information of SK holdings.
+ * You shall not disclose such confidential information and shall use it only in
+ * accordance with the terms of the license agreement you entered into with SK holdings.
+ * (http://www.eclipse.org/legal/epl-v10.html)
  */
-
 package nexcore.alm.common.log;
 
 import java.io.IOException;

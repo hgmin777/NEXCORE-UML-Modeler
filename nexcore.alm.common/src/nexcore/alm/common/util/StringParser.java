@@ -17,7 +17,6 @@ import java.util.StringTokenizer;
  * <li>작성일 : 2007. 04. 02</li>
  * <li>작성자 : SKC&amp;C 기술전략팀 표준 업무 담당자</li>
  * </ul>
- * Copyright ⓒ SK C&C. All Right Reserved.
  * 
  * <b>관련 정보</b> StringParser 클래스는 키=값 문자열의 조합, 분해 및 기타 조작 기능을 제공한다.
  * 

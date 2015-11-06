@@ -1,10 +1,9 @@
-/* 
- * Copyright (c) 2012 SK C&C Co., Ltd. All rights reserved.
- * 
- * This software is the confidential and proprietary information of SK C&C.
- * You shall not disclose such confidential information and shall use it
- * only in accordance with the terms of the license agreement you entered into
- * with SK C&C.
+/**
+ * Copyright (c) 2015 SK holdings Co., Ltd. All rights reserved.
+ * This software is the confidential and proprietary information of SK holdings.
+ * You shall not disclose such confidential information and shall use it only in
+ * accordance with the terms of the license agreement you entered into with SK holdings.
+ * (http://www.eclipse.org/legal/epl-v10.html)
  */
 
 package nexcore.tool.uml.ui.project.util;
@@ -63,27 +62,6 @@ public class ModelInformationUtil {
      * 리소스에 포함된 패키지 개수
      */
     public static int packageCountOfResource(Resource resource) {
-        /*Model model = (org.eclipse.uml2.uml.Model) EcoreUtil.getObjectByType(resource.getContents(),
-            UMLPackage.Literals.MODEL);
-
-        if (model == null)
-            return 0;
-
-        TreeMap<String, Package> packageList = new TreeMap<String, Package>();
-
-        SELECT statement = new SELECT(new FROM(model),
-            new WHERE(new EObjectTypeRelationCondition(UMLPackage.eINSTANCE.getPackage())));
-        IQueryResult result = statement.execute();
-
-        for (Iterator<?> ir = result.iterator(); ir.hasNext();) {
-            Package pkg = (Package) ir.next();
-
-            if (pkg == null || pkg.getQualifiedName() == null) {
-                continue;
-            }
-            packageList.put(String.format("%s_%s", pkg.getQualifiedName(), EcoreUtil.getURI(pkg).fragment()), pkg);
-        }*/
-        
         TreeMap<String, Package> packageList = selectQuery(resource);
         
         return packageList.size();
