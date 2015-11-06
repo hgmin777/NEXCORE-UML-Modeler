@@ -11,15 +11,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import nexcore.tool.uml.core.util.StringMatcher;
-import nexcore.tool.uml.manager.ManagerConstant;
-import nexcore.tool.uml.manager.utility.DomainRegistry;
-import nexcore.tool.uml.ui.core.UICoreConstant;
-import nexcore.tool.uml.ui.search.match.UMLModelElement;
-import nexcore.tool.uml.ui.search.match.UMLModelMatch;
-import nexcore.tool.uml.ui.search.match.UMLModelSearchPattern;
-import nexcore.tool.uml.ui.search.ui.UMLModelSearchResult;
-
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.IProgressMonitor;
@@ -30,9 +21,18 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.validation.internal.util.StringMatcher;
 import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.NamedElement;
 import org.eclipse.uml2.uml.UMLPackage;
+
+import nexcore.tool.uml.manager.ManagerConstant;
+import nexcore.tool.uml.manager.utility.DomainRegistry;
+import nexcore.tool.uml.ui.core.UICoreConstant;
+import nexcore.tool.uml.ui.search.match.UMLModelElement;
+import nexcore.tool.uml.ui.search.match.UMLModelMatch;
+import nexcore.tool.uml.ui.search.match.UMLModelSearchPattern;
+import nexcore.tool.uml.ui.search.ui.UMLModelSearchResult;
 
 /**
  * <ul>
