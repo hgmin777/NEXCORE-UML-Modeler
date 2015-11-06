@@ -3,7 +3,7 @@
  * This software is the confidential and proprietary information of SK holdings.
  * You shall not disclose such confidential information and shall use it only in
  * accordance with the terms of the license agreement you entered into with SK holdings.
- * (http://www.apache.org/licenses/LICENSE-2.0)
+ * (http://www.eclipse.org/legal/epl-v10.html)
  */
 // [참고] 요소가 복사 되지 않을때
 // ElementCollector.collectExtraElement 에서 수집되지 않는 요소를 추가한다.

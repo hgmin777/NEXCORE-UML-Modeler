@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2015 SK holdings Co., Ltd. All rights reserved.
- * This software is the confidential and proprietary information of SK holdings.
- * You shall not disclose such confidential information and shall use it only in
- * accordance with the terms of the license agreement you entered into with SK holdings.
- * (http://www.apache.org/licenses/LICENSE-2.0)
- */
 /*******************************************************************************
  * Copyright (c) 2000, 2006 IBM Corporation and others. All rights reserved.
  * This program and the accompanying materials are made available under the
