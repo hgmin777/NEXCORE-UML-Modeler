@@ -13,11 +13,11 @@
 
 #### 3. Supported Diagrams 
 
-* [Usecase Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/3.1.-Usecase-Diagram)
-* [Class Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/3.2.-Class-Diagram)
-* [Sequence Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/3.3.-Sequence-Diagram)
-* [Activity Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/3.4.-Activity-Diagram)
-* [Component Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/3.5.-Component-Diagram)
+* [Usecase Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/02.1.-Usecase-Diagram)
+* [Class Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/02.2.-Class-Diagram)
+* [Sequence Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/02.3.-Sequence-Diagram)
+* [Activity Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/02.4.-Activity-Diagram)
+* [Component Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/02.5.-Component-Diagram)
 
 > ![](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/wiki_files/class_diagram1.jpg)
 
