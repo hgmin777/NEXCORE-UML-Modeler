@@ -13,18 +13,18 @@
 
 #### 3. Supported Diagrams 
 
-* [Usecase Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/02.1.-Usecase-Diagram)
-* [Class Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/02.2.-Class-Diagram)
-* [Sequence Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/02.3.-Sequence-Diagram)
-* [Activity Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/02.4.-Activity-Diagram)
-* [Component Diagram](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/02.5.-Component-Diagram)
+* [Usecase Diagram](https://github.com/hgmin777/NEXCORE-UML-Modeler/wiki/02.1.-Usecase-Diagram)
+* [Class Diagram](https://github.com/hgmin777/NEXCORE-UML-Modeler/wiki/02.2.-Class-Diagram)
+* [Sequence Diagram](https://github.com/hgmin777/NEXCORE-UML-Modeler/wiki/02.3.-Sequence-Diagram)
+* [Activity Diagram](https://github.com/hgmin777/NEXCORE-UML-Modeler/wiki/02.4.-Activity-Diagram)
+* [Component Diagram](https://github.com/hgmin777/NEXCORE-UML-Modeler/wiki/02.5.-Component-Diagram)
 
 > ![](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/wiki_files/class_diagram1.jpg)
 
 #### 4. Guidance
 
-* [Quick Guide] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki/00.-Quick-Guide) (Installation and Execution) : [Download] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/wiki_files/NEXCORE%20UML%20Modeler_Quick%20Guide.pptx)
-* [User Manual] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/wiki)
-* [Developer Guide] (https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/releases/download/v2.0/NEXCORE.UML.Modeler_Developer.Guide.pptx)
+* [Quick Guide] (https://github.com/hgmin777/NEXCORE-UML-Modeler/wiki/00.-Quick-Guide) (Installation and Execution) : [Download] (https://github.com/hgmin777/NEXCORE-UML-Modeler/blob/master/wiki_files/NEXCORE%20UML%20Modeler_Quick%20Guide.pptx)
+* [User Manual] (https://github.com/hgmin777/NEXCORE-UML-Modeler/wiki)
+* [Developer Guide] (https://github.com/hgmin777/NEXCORE-UML-Modeler/releases/download/v2.0/NEXCORE.UML.Modeler_Developer.Guide.pptx)
 
-[![NEXCORE](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/wiki_files/top_nexcore.gif)](http://nexcore.skcc.com/ko/)  is a trademark of SK Holdings Co. Ltd.
+[![NEXCORE](https://github.com/hgmin777/NEXCORE-UML-Modeler/blob/master/wiki_files/top_nexcore.gif)](http://nexcore.skcc.com/ko/)  is a trademark of SK Holdings Co. Ltd.
