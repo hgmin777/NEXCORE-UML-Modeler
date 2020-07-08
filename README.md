@@ -19,7 +19,7 @@
 * [Activity Diagram](https://github.com/hgmin777/NEXCORE-UML-Modeler/wiki/02.4.-Activity-Diagram)
 * [Component Diagram](https://github.com/hgmin777/NEXCORE-UML-Modeler/wiki/02.5.-Component-Diagram)
 
-> ![](https://github.com/SK-HOLDINGS-CC/NEXCORE-UML-Modeler/blob/master/wiki_files/class_diagram1.jpg)
+> ![](https://github.com/hgmin777/NEXCORE-UML-Modeler/blob/master/wiki_files/class_diagram1.jpg)
 
 #### 4. Guidance
 
